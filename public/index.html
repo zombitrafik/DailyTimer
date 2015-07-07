@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+	<script src="js/app.js"></script>
+  </head>
+  <body ng-controller="Ctrl">
+	<button ng-click="GetSchedules()">GET ALL SCHEDULES</button><br />
+	<button ng-click="PostSchedule()">POST NEW SCHEDULE</button><br />
+	<button ng-click="DeleteSchedule()">DELET SCHEDULE</button>
+	<input ng-model="deleteID" placeholder="DELETE ID"/><br />
+	<button ng-click="GetScheduleById()">GET SCHEDULE BY ID</button>
+	<input ng-model="getID" placeholder="GET ID"/><br />
+	<button ng-click="ChangeScheduleById()">CHANGE SCHEDULE BY ID</button>
+	<input ng-model="changeID" placeholder="CHANGE ID"/><br />
+
+	<!-- LOGIN FORM -->
+	<input placeholder="username" ng-model="username" />
+	<input placeholder="password" ng-model="password" />
+	<button ng-click="SignUp()">SIGN UP</button>
+	<button ng-click="LogIn()">LOGIN</button>
+
+  </body>
+</html>
