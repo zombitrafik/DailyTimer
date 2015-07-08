@@ -368,3 +368,76 @@
 {"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T15:45:47.810Z"}
 {"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T15:45:48.764Z"}
 {"level":"error","message":"Internal error(500): Can't set headers after they are sent.","timestamp":"2015-07-08T15:46:03.267Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T19:10:55.571Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T19:10:56.833Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T19:15:25.717Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T19:15:27.002Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:16:51.110Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T19:19:19.032Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T19:19:20.321Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:20:21.621Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:20:41.876Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-08T19:20:42.098Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T19:21:13.772Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T19:21:15.051Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:21:19.078Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-08T19:21:19.280Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:21:30.605Z"}
+{"level":"error","message":"Internal error(500): Can't set headers after they are sent.","timestamp":"2015-07-08T19:22:16.290Z"}
+{"level":"error","message":"Internal error(500): Can't set headers after they are sent.","timestamp":"2015-07-08T19:23:13.579Z"}
+{"level":"info","message":"/schedules access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T19:23:30.726Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:23:48.855Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-08T19:23:49.055Z"}
+{"level":"info","message":"/schedules access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T19:24:00.939Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T19:48:54.304Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T19:48:55.576Z"}
+{"level":"info","message":"/schedules access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T19:49:03.771Z"}
+{"level":"error","message":"Internal error(500): Can't set headers after they are sent.","timestamp":"2015-07-08T19:49:48.395Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:50:09.074Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T19:51:00.324Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T19:51:01.594Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:51:07.068Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T19:51:25.701Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T19:51:26.904Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:51:28.694Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T19:56:47.120Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T19:56:48.380Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1df4 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:57:26.193Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1df4 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:58:21.167Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T19:58:53.954Z"}
+{"level":"info","message":"/schedules access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T19:59:18.364Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T20:00:10.266Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T20:00:11.549Z"}
+{"level":"info","message":"/schedules access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T20:00:19.042Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T20:01:30.381Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T20:01:31.562Z"}
+{"level":"info","message":"/schedules access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T20:01:34.009Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1df4 access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T20:01:48.643Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1df4 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T20:02:21.908Z"}
+{"level":"error","message":"Internal error(500): Can't set headers after they are sent.","timestamp":"2015-07-08T20:18:58.106Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T20:59:35.620Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1df4 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T20:59:58.563Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1df4 access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T21:00:16.259Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T21:02:03.379Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T21:02:04.645Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1df4 access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T21:02:27.901Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1df4 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T21:02:58.698Z"}
+{"level":"info","message":"schedule removed","timestamp":"2015-07-08T21:02:59.465Z"}
+{"level":"info","message":"/schedules/559d78c46faca91013ce1df4 access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T21:03:06.551Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T21:18:47.406Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T21:18:48.478Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T21:18:59.088Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-08T21:18:59.575Z"}
+{"level":"info","message":"/schedules/%22559d93c3866c3e901fac99e3%22 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T21:19:29.320Z"}
+{"level":"info","message":"/schedules/559d93c3866c3e901fac99e3 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T21:19:38.675Z"}
+{"level":"info","message":"/schedules/559d93c3866c3e901fac99e3 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T21:20:04.123Z"}
+{"level":"info","message":"schedule removed","timestamp":"2015-07-08T21:20:04.734Z"}
+{"level":"info","message":"/schedules/559d93c3866c3e901fac99e3 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T21:20:08.153Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T21:32:04.844Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T21:32:06.976Z"}
+{"level":"info","message":"/schedules/559d93c3866c3e901fac99e3 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T21:33:49.516Z"}
+{"level":"info","message":"/schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T21:35:31.057Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-08T21:35:31.530Z"}
+{"level":"info","message":"/schedules/559d97a32189f2441ab40557 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi","timestamp":"2015-07-08T21:35:43.196Z"}
+{"level":"info","message":"schedule updated","timestamp":"2015-07-08T21:35:43.845Z"}
+{"level":"info","message":"/schedules/559d97a32189f2441ab40557 access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK","timestamp":"2015-07-08T21:36:38.546Z"}

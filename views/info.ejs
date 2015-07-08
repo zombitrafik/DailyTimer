@@ -21,6 +21,13 @@
 		  border-left-color: #aa6708;
 		  margin: 0px;
 		}
+		.bs-callout-success {
+		  border: 1px solid #eee;
+		  border-left-width: 5px;
+		  border-radius: 3px;
+		  border-left-color: #3c763d;
+		  margin: 0px;
+		}
 		.bs-callout {
 		  padding: 20px;
 		  padding-bottom: 0;
@@ -31,6 +38,7 @@
 		}
 		.kbd {
 			color: #000;
+			font-weight: 900;
 		}
 		.domen {
 			color: gray;
@@ -63,7 +71,7 @@
 }</pre>
 </code></div>
 	<div class="bs-callout bs-callout-warning">
-		<code>return</code>
+		<code>Server answer</code>
 		<pre>{ id: userId }</pre>
 	</div>
 	</div>
@@ -79,24 +87,180 @@
 }</pre>
 </code></div>
 	<div class="bs-callout bs-callout-warning">
-		<code>return</code>
+		<code>Server answer</code>
 		<pre>{ token: token }</pre>
 	</div>
 	</div>
 <!-- get schedules -->
 	<div class="bs-callout bs-callout-blue space">
-		<h4>Получить лист расписаний пользователя:</h4>
+		<h4>Получить <code>лист</code> расписаний пользователя:</h4>
 		<div><code>method</code>: <code class="kbd">GET</code></div><br />
 		<div><code>url</code>: <code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules</code></div><br />
 		<div><code>parameters</code>: <code class="kbd">
 <pre>
-access_token=YOUR_ACCESS_TOKEN
-user_id=USER_ID
+access_token=_YOUR_ACCESS_TOKEN_
 </pre>
-</code></div></div>
+</code></div>
+		<div class="bs-callout bs-callout-warning">
+			<code>Server answer</code>
+<pre>
+{ status: status,
+  schedules: [ { 
+      schedule: [ items ],
+      title: scheduleTitle,
+      creator: creatorId,
+      isPrivate: isPrivate
+    }
+  ]
+}</pre>
+		</div>
+		<div class="bs-callout bs-callout-success">
+			<code>Example</code>
+			<code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules?access_token=Qx4DjqqSHSRhtHNp</code>
+		</div>
+		</div>
+<!-- get schedule by id -->
+	<div class="bs-callout bs-callout-blue space">
+		<h4>Получить <code>расписание</code> по его id:</h4>
+		<div><code>method</code>: <code class="kbd">GET</code></div><br />
+		<div><code>url</code>: <code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules/_SCHEDULE_ID_HERE_</code></div><br />
+		<div><code>parameters</code>: <code class="kbd">
+<pre>
+access_token=_YOUR_ACCESS_TOKEN_
+</pre>
+</code></div>
+	<div class="bs-callout bs-callout-warning">
+		<code>Server answer</code>
+		<pre>{ status: status, schedule: schedule }</pre>
+	</div>
+	<div class="bs-callout bs-callout-success">
+		<code>Example</code>
+		<code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules/559d78c46faca91013ce1df4?access_token=Qx4DjqqSHSRhtHNp</code>
+	</div>
+</div>
+<!-- remove schedule by id -->
+	<div class="bs-callout bs-callout-blue space">
+		<h4>Удалить <code>расписание</code> по его id:</h4>
+		<div><code>method</code>: <code class="kbd">DELETE</code></div><br />
+		<div><code>url</code>: <code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules/_SCHEDULE_ID_HERE_</code></div><br />
+		<div><code>parameters</code>: <code class="kbd">
+<pre>
+access_token=_YOUR_ACCESS_TOKEN_
+</pre>
+</code></div>
+	<div class="bs-callout bs-callout-warning">
+		<code>Server answer</code>
+		<pre>{ status: status [, message: error_message] }</pre>
+	</div>
+	<div class="bs-callout bs-callout-success">
+		<code>Example</code>
+		<code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules/559d78c46faca91013ce1df4?access_token=Qx4DjqqSHSRhtHNp</code>
+	</div>
+</div>
+<!-- post schedule -->
+	<div class="bs-callout bs-callout-blue space">
+		<h4>Создать <code>расписание</code>:</h4>
+		<div><code>method</code>: <code class="kbd">POST</code></div><br />
+		<div><code>url</code>: <code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules</code></div><br />
+		<div><code>parameters</code>: <code class="kbd">
+<pre>
+access_token=_YOUR_ACCESS_TOKEN_
+</pre>
+</code>
+<code>body</code>: <code class="kbd">
+<pre>
+{
+  title: scheduleTitle,
+  schedule: [
+	{ 
+	  title: itemTitle,
+	  time: timeString,
+	  color: rgbaColorString
+	},
+	{
+	  title: itemTitle,
+	  time: timeString,
+	  color: rgbaColorString
+	},
+  ],
+  isPrivate: isPrivate
+}
+</pre>
+</code>
+</div>
 
+	<div class="bs-callout bs-callout-warning">
+		<code>Server answer</code>
+		<pre>{ status: status, schedule: schedule }</pre>
+	</div>
+	<div class="bs-callout bs-callout-success">
+		<code>Example</code>
+		<code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules?access_token=Qx4DjqqSHSRhtHNp</code>
+		<div><code>body</code>: <code class="kbd">
+<pre>
+{
+  title: "Моё первое расписание",
+  schedule: [
+	{ 
+	  title: "Проснуться",
+	  time: "12.12.2012",
+	  color: "rgba(100,120,200, 0.8)"
+	},
+	{
+	  title: "Заснуть",
+	  time: "13.12.2012",
+	  color: "rgba(100,120,200, 0.8)"
+	},
+  ],
+  isPrivate: true
+}
+</pre>
+</code></div>
+	</div>
+</div>
+<!-- edit schedule -->
+	<div class="bs-callout bs-callout-blue space">
+		<h4>Изменить <code>расписание</code> по его id:</h4>
+		<div><code>method</code>: <code class="kbd">PUT</code></div><br />
+		<div><code>url</code>: <code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules/_SCHEDULE_ID_HERE_</code></div><br />
+		<div><code>parameters</code>: <code class="kbd">
+<pre>
+access_token=_YOUR_ACCESS_TOKEN_
+</pre>
+</code>
+<code>body</code>(not required): <code class="kbd">
+<pre>
+{
+  title: scheduleTitle,
+  schedule: [
+	{ 
+	  title: itemTitle,
+	  time: timeString,
+	  color: rgbaColorString
+	}
+  ],
+  isPrivate: isPrivate
+}
+</pre>
+</code>
+</div>
 
-	
+	<div class="bs-callout bs-callout-warning">
+		<code>Server answer</code>
+		<pre>{ status: status, schedule: schedule }</pre>
+	</div>
+	<div class="bs-callout bs-callout-success">
+		<code>Example</code>
+		<code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules/_SCHEDULE_ID_HERE_?access_token=Qx4DjqqSHSRhtHNp</code>
+		<div><code>body</code>: <code class="kbd">
+<pre>
+{
+  title: "Моё изменённое расписание"
+}
+</pre>
+</code></div>
+	</div>
+</div>
 
 </div>
 </body>

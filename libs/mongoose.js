@@ -17,19 +17,6 @@ db.once('open', function callback () {
 
 var Schema = mongoose.Schema;
 
-var Item = new Schema({
-	title: String,
-	time: String,
-	color: String
-});
-
-var Schedule = new Schema({
-    title: String,
-    schedule: [Item]
-});
-
-var ScheduleModel = mongoose.model('Schedule', Schedule);
-
 var User = new Schema({
 	local: {
 		username: String,
@@ -86,6 +73,26 @@ User.methods.validatePassword = function(password) {
 
 var UserModel = mongoose.model('User', User);
 var TokenModel = mongoose.model('Token', tokenSchema);
+
+
+var Item = new Schema({
+	title: String,
+	time: String,
+	color: String
+});
+
+var Schedule = new Schema({
+    title: String,
+    schedule: [Item],
+    isPrivate: {
+    	type: Boolean,
+    	required: true,
+    	default: true
+    },
+    creator: String
+});
+
+var ScheduleModel = mongoose.model('Schedule', Schedule);
 
 module.exports.ScheduleModel = ScheduleModel;
 module.exports.UserModel = UserModel;

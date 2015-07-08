@@ -16,14 +16,16 @@ app.controller('Ctrl', function ($scope, $http) {
 			schedule: [
 				{title: "Проснуться", time: new Date().toString(), color: "rgba(100,120,200, 0.8)" },
 				{title: "Заснуть", time: new Date().toString(), color: "rgba(100,120,200, 0.8)" },
-			]
+			],
+			isPrivate: true,
+			creator: '559d706d9db02511004e9ca6'
 		};
-		$http.post('http://localhost:1337/api/schedules', body).success(function (response) {
+		$http.post('http://localhost:3000/api/schedules?access_token=Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi', body).success(function (response) {
 			console.log(response);
 		});
 	};
 	$scope.DeleteSchedule = function () {
-		$http.delete('http://localhost:1337/api/schedules/' + $scope.deleteID).success(function (response) {
+		$http.delete('http://localhost:3000/api/schedules/' + $scope.deleteID + '?access_token=Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi').success(function (response) {
 			console.log(response);
 		});
 	};
@@ -38,7 +40,7 @@ app.controller('Ctrl', function ($scope, $http) {
 		var body = {
 			title: "Changed title for id " + $scope.changeID
 		}
-		$http.put('http://localhost:1337/api/schedules/' + $scope.changeID, body).success(function (response) {
+		$http.put('http://localhost:3000/api/schedules/' + $scope.changeID + '?access_token=RUXoSWICegffZURyR1QKUCbYJSrwjKpK', body).success(function (response) {
 			console.log(response);
 		});
 	};
