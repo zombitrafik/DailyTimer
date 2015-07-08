@@ -43,6 +43,7 @@ app.use(flash());
 
 //app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
+app.set('port', process.env.PORT || config.get('port'));
 // routes
 app.use(Routes);
 app.use('/auth', Auth);
@@ -63,6 +64,6 @@ app.use(function(err, req, res, next){
     return;
 });
 
-app.listen(config.get('port'), function(){
-    log.info('Express server listening on port ' + config.get('port'));
+app.listen(app.get('port'), function(){
+    log.info('Express server listening on port ' + app.get('port'));
 });
