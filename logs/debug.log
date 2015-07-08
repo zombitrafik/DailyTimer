@@ -227,7 +227,7 @@ Cannot read property 'id' of undefined
 2015-07-07T10:10:34.004Z - info: Express server listening on port 1337
 2015-07-07T10:10:35.067Z - info: Connected to DB!
 2015-07-07T10:13:54.900Z - info: Express server listening on port 1337
-2015-07-07T10:13:56.007Z - info: Connected to DB!
+2015-07-07T10:13:56.007Z - info: Connected to DB!123
 2015-07-07T10:18:29.027Z - info: Express server listening on port 1337
 2015-07-07T10:18:30.072Z - info: Connected to DB!
 2015-07-07T10:21:42.509Z - info: Express server listening on port 1337
