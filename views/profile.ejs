@@ -14,6 +14,7 @@
 
     <div class="page-header text-center">
         <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/api/info" class="btn btn-info"><span class="fa fa-info"></span> API Guide</a>
         <a href="/auth/logout" class="btn btn-default btn-sm">Logout</a>
         <% if(user.token == null) { %>
             <br /><br /><a href="/auth/getToken" class="btn btn-warning">Generate Token</a>
@@ -36,9 +37,9 @@
                         <strong>password</strong>: <%= user.local.password %>
                     </p>
                     
-                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                    <a href="/auth/unlink/local" class="btn btn-default">Unlink</a>
                 <% } else { %>
-                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                    <a href="/auth/connect/local" class="btn btn-default">Connect Local</a>
                 <% } %>
 
             </div>
@@ -58,9 +59,9 @@
                         <strong>name</strong>: <%= user.google.name %>
                     </p>
 
-                    <a href="/unlink/google" class="btn btn-danger">Unlink</a>
+                    <a href="/auth/unlink/google" class="btn btn-danger">Unlink</a>
                 <% } else { %>
-                    <a href="/connect/google" class="btn btn-danger">Connect Google</a>
+                    <a href="/auth/connect/google" class="btn btn-danger">Connect Google</a>
                 <% } %>
 
             </div>

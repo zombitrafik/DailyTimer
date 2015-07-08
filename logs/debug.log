@@ -386,3 +386,17 @@ Cannot read property 'id' of undefined
 2015-07-08T11:38:27.646Z - error: Internal error(500): Can't set headers after they are sent.
 2015-07-08T11:38:40.704Z - error: Internal error(500): Can't set headers after they are sent.
 2015-07-08T11:39:23.135Z - info: /schedules access_token cACcoa5loAacUFcBjzZUaylnVnR0Xvb6
+2015-07-08T14:52:57.551Z - info: Express server listening on port 3000
+2015-07-08T14:52:58.611Z - info: Connected to DB!
+2015-07-08T15:40:57.503Z - info: Express server listening on port 3000
+2015-07-08T15:40:58.533Z - info: Connected to DB!
+2015-07-08T15:43:01.589Z - info: Express server listening on port 3000
+2015-07-08T15:43:02.685Z - info: Connected to DB!
+2015-07-08T15:43:46.717Z - info: Express server listening on port 3000
+2015-07-08T15:43:47.716Z - info: Connected to DB!
+2015-07-08T15:44:41.616Z - info: Express server listening on port 3000
+2015-07-08T15:44:45.514Z - info: Connected to DB!
+2015-07-08T15:45:19.953Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-08T15:45:47.809Z - info: Express server listening on port 3000
+2015-07-08T15:45:48.764Z - info: Connected to DB!
+2015-07-08T15:46:03.267Z - error: Internal error(500): Can't set headers after they are sent.

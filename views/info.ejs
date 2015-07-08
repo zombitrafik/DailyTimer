@@ -1,0 +1,103 @@
+<!-- views/info.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>DailyTimer</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<style>
+		body 
+		{ padding-top:80px; }
+		.bs-callout-blue {
+		  border: 1px solid #eee;
+		  border-left-width: 5px;
+		  border-radius: 3px;
+		  border-left-color: #1b809e;
+		}
+		.bs-callout-warning {
+		  border: 1px solid #eee;
+		  border-left-width: 5px;
+		  border-radius: 3px;
+		  border-left-color: #aa6708;
+		  margin: 0px;
+		}
+		.bs-callout {
+		  padding: 20px;
+		  padding-bottom: 0;
+		  margin-bottom: 10px;
+		}
+		h4 {
+			color: #1b809e;
+		}
+		.kbd {
+			color: #000;
+		}
+		.domen {
+			color: gray;
+		}
+		.space {
+			margin-bottom: 40px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="jumbotron text-center">
+		<h1><span class="fa fa-globe"></span> API Guide</h1>
+	</div>
+
+
+		
+	<div class="bs-callout bs-callout-blue space">
+		<h4>Получить <code>userId</code> пользователя:</h4>
+		<div><code>method</code>: <code class="kbd">POST</code></div><br />
+		<div><code>url</code>: <code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>auth/google/getAccessById</code></div><br />
+		<div><code>body</code>: <code class="kbd">
+<pre>
+{
+  id: googleId,
+  displayName: username,
+  accessToken: accessToken,
+  email: email
+}</pre>
+</code></div>
+	<div class="bs-callout bs-callout-warning">
+		<code>return</code>
+		<pre>{ id: userId }</pre>
+	</div>
+	</div>
+<!-- getTokenById -->
+	<div class="bs-callout bs-callout-blue space">
+		<h4>Получить <code>token</code> пользователя:</h4>
+		<div><code>method</code>: <code class="kbd">POST</code></div><br />
+		<div><code>url</code>: <code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>auth/getTokenById</code></div><br />
+		<div><code>body</code>: <code class="kbd">
+<pre>
+{
+  id: userId
+}</pre>
+</code></div>
+	<div class="bs-callout bs-callout-warning">
+		<code>return</code>
+		<pre>{ token: token }</pre>
+	</div>
+	</div>
+<!-- get schedules -->
+	<div class="bs-callout bs-callout-blue space">
+		<h4>Получить лист расписаний пользователя:</h4>
+		<div><code>method</code>: <code class="kbd">GET</code></div><br />
+		<div><code>url</code>: <code class="kbd well well-sm"><span class="domen">https://sleepy-river-1523.herokuapp.com/</span>api/schedules</code></div><br />
+		<div><code>parameters</code>: <code class="kbd">
+<pre>
+access_token=YOUR_ACCESS_TOKEN
+user_id=USER_ID
+</pre>
+</code></div></div>
+
+
+	
+
+</div>
+</body>
+</html>

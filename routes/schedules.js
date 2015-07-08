@@ -3,6 +3,11 @@ var log = require('../libs/log')(module);
 //routes
 module.exports = function (router, passport) {
 
+
+	router.get('/info', function (req, res) {
+		res.render('info.ejs', {});
+	});
+
 	router.use(passport.authenticate('bearer', { session: false }));
 
 	router.use(function (req, res, next) {

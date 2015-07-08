@@ -354,3 +354,17 @@
 {"level":"error","message":"Internal error(500): Can't set headers after they are sent.","timestamp":"2015-07-08T11:38:27.652Z"}
 {"level":"error","message":"Internal error(500): Can't set headers after they are sent.","timestamp":"2015-07-08T11:38:40.705Z"}
 {"level":"info","message":"/schedules access_token cACcoa5loAacUFcBjzZUaylnVnR0Xvb6","timestamp":"2015-07-08T11:39:23.135Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T14:52:57.552Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T14:52:58.611Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T15:40:57.505Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T15:40:58.533Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T15:43:01.590Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T15:43:02.686Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T15:43:46.718Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T15:43:47.717Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T15:44:41.617Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T15:44:45.514Z"}
+{"level":"error","message":"Internal error(500): Can't set headers after they are sent.","timestamp":"2015-07-08T15:45:19.954Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-08T15:45:47.810Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-08T15:45:48.764Z"}
+{"level":"error","message":"Internal error(500): Can't set headers after they are sent.","timestamp":"2015-07-08T15:46:03.267Z"}
