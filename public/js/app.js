@@ -62,4 +62,29 @@ app.controller('Ctrl', function ($scope, $http) {
 			console.log(response);
 		});
 	};
+
+	$scope.Exchange = function  () {
+		var body = {
+			id: '123',
+			displayName: '123',
+			accessToken: '123',
+			email: '123'
+		};
+		$http.post('http://localhost:1337/auth/google/getAccessById', body).success(function (response) {
+			console.log(response);
+		});
+	}
+/*
+
+
+	$scope.Exchange = function  () {
+		var body = {
+			id: '234567'
+		};
+		$http.post('http://localhost:1337/auth/getTokenById', body).success(function (response) {
+			console.log(response);
+		});
+	}
+
+*/
 });

@@ -18,25 +18,19 @@ db.once('open', function callback () {
 var Schema = mongoose.Schema;
 
 var Item = new Schema({
-	title: {
-		type: String,
-		required: true
-	},
-	time: {
-		type: String,
-		required: true
-	},
-	color: {
-		type: String
-	}
+	title: String,
+	time: String,
+	color: String
 });
 
 var Schedule = new Schema({
-    title: {
-    	type: String,
+    title: String,
+    schedule: [Item],
+    private: [User],
+    creator: {
+    	type: User,
     	required: true
-    },
-    schedule: [Item]
+    } 
 });
 
 var ScheduleModel = mongoose.model('Schedule', Schedule);

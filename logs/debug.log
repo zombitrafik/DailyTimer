@@ -261,3 +261,128 @@ Cannot read property 'id' of undefined
 2015-07-07T11:39:22.307Z - info: Connected to DB!
 2015-07-07T11:39:43.235Z - info: Express server listening on port 1337
 2015-07-07T11:39:44.310Z - info: Connected to DB!
+2015-07-07T17:33:20.371Z - info: Express server listening on port 1337
+2015-07-07T17:33:21.401Z - info: Connected to DB!
+2015-07-08T09:07:46.557Z - info: Express server listening on port 1337
+2015-07-08T09:07:47.759Z - info: Connected to DB!
+2015-07-08T09:07:55.579Z - info: code: 4/YozvV346OgF4NZuxs6oF_BwbhpKHoCq6giQRMU1jKoY
+2015-07-08T09:09:17.352Z - info: code: 4/SiwKwB37Kx3QCSrX1vbvBzVSDIUo1kP4vZ6OuoyGrUY
+2015-07-08T09:14:46.916Z - info: Express server listening on port 1337
+2015-07-08T09:14:48.745Z - info: Connected to DB!
+2015-07-08T09:15:00.917Z - info: code: 4/NnaEDQdFH8YmEIlyzYz-dpKvg5GOyD7VrIBJ5YeGCBs
+2015-07-08T09:16:09.270Z - info: 
+2015-07-08T09:18:35.287Z - info: Express server listening on port 1337
+2015-07-08T09:18:36.430Z - info: Connected to DB!
+2015-07-08T09:18:40.649Z - info: code: 4/uUjdaLI3QjXm2YwaZ4hXHxPjPGtPLBCuaBVrMe6_Eio
+2015-07-08T09:19:07.586Z - info: 
+2015-07-08T09:19:11.098Z - info: 
+2015-07-08T09:20:45.100Z - info: Express server listening on port 1337
+2015-07-08T09:20:46.331Z - info: Connected to DB!
+2015-07-08T09:20:53.998Z - info: code: 4/zhF8Ub2pRzQz4eBpC93aPspxBzeRsmhjF741pXaibH8
+2015-07-08T09:21:09.709Z - info: 
+2015-07-08T09:27:24.363Z - info: Express server listening on port 1337
+2015-07-08T09:27:25.534Z - info: Connected to DB!
+2015-07-08T09:27:36.321Z - info: code: 4/9C5c5jf9NIdwH6G-EaVL6qSg_vya8bw5x7BAvaWiIcA
+2015-07-08T09:43:22.046Z - info: Express server listening on port 1337
+2015-07-08T09:43:23.203Z - info: Connected to DB!
+2015-07-08T09:43:30.182Z - info: code: 4/ZpwTnb0MwA305DTGO7ZIyrI4oZDhxQayhnrl8baM3wE
+2015-07-08T09:52:39.075Z - info: Express server listening on port 1337
+2015-07-08T09:52:40.251Z - info: Connected to DB!
+2015-07-08T09:52:50.775Z - info: code: 4/NXZPzjdUZYTIsE0aGdvBHjCvWIJBakp843_5irJCen4
+2015-07-08T09:54:26.798Z - info: Express server listening on port 1337
+2015-07-08T09:54:27.937Z - info: Connected to DB!
+2015-07-08T09:55:21.230Z - info: code: 4/a3ptHl6BO4nUpKmUkSm7kPY5G0J0EFzX4NM55x-BEaw
+2015-07-08T09:56:32.313Z - info: Express server listening on port 1337
+2015-07-08T09:56:33.421Z - info: Connected to DB!
+2015-07-08T09:57:01.562Z - info: Express server listening on port 1337
+2015-07-08T09:57:02.622Z - info: Connected to DB!
+2015-07-08T09:57:28.344Z - info: Express server listening on port 1337
+2015-07-08T09:57:29.457Z - info: Connected to DB!
+2015-07-08T09:59:45.651Z - info: Express server listening on port 1337
+2015-07-08T09:59:46.794Z - info: Connected to DB!
+2015-07-08T10:01:28.672Z - info: Express server listening on port 1337
+2015-07-08T10:01:29.822Z - info: Connected to DB!
+2015-07-08T10:01:47.614Z - info: code: 4/e3NlXP6WKzRNb0hqA2NOM70S3CjslLM_8DToDND18pQ
+2015-07-08T10:02:16.633Z - info: Express server listening on port 1337
+2015-07-08T10:02:17.736Z - info: Connected to DB!
+2015-07-08T10:02:21.923Z - info: code: 4/WXBqOAgRIyMrNdh2BaVTw5tZl135o4KzxypH7qCtJEw
+2015-07-08T10:05:39.120Z - info: Express server listening on port 1337
+2015-07-08T10:05:40.256Z - info: Connected to DB!
+2015-07-08T10:05:45.495Z - error: Internal error(500): request is not defined
+2015-07-08T10:05:45.488Z - info: code: 4/lJsdMcvAzh6wZsQs2oNeuWzokiEmgOxwnI10MZVe5as
+2015-07-08T10:06:11.817Z - info: Express server listening on port 1337
+2015-07-08T10:06:12.895Z - info: Connected to DB!
+2015-07-08T10:06:18.885Z - info: code: 4/P3KM0n1qT_8zjHjPu-ty6nUuKR1v_vWvR7xeGhWm8EI
+2015-07-08T10:17:20.247Z - info: Express server listening on port 1337
+2015-07-08T10:17:21.370Z - info: Connected to DB!
+2015-07-08T10:18:19.804Z - info: Express server listening on port 1337
+2015-07-08T10:18:20.866Z - info: Connected to DB!
+2015-07-08T10:42:10.966Z - info: Express server listening on port 1337
+2015-07-08T10:42:12.178Z - info: Connected to DB!
+2015-07-08T10:43:57.779Z - info: Express server listening on port 1337
+2015-07-08T10:43:59.068Z - info: Connected to DB!
+2015-07-08T10:44:40.762Z - info: Express server listening on port 1337
+2015-07-08T10:44:41.852Z - info: Connected to DB!
+2015-07-08T10:45:17.649Z - info: Express server listening on port 1337
+2015-07-08T10:45:18.726Z - info: Connected to DB!
+2015-07-08T10:47:50.524Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T10:48:21.151Z - info: Express server listening on port 1337
+2015-07-08T10:48:22.353Z - info: Connected to DB!
+2015-07-08T10:49:48.972Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T10:50:20.445Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T10:51:33.066Z - info: Express server listening on port 1337
+2015-07-08T10:51:34.922Z - info: Connected to DB!
+2015-07-08T10:53:36.916Z - info: Express server listening on port 1337
+2015-07-08T10:53:39.492Z - info: Connected to DB!
+2015-07-08T10:53:44.456Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T10:56:08.942Z - info: Express server listening on port 1337
+2015-07-08T10:56:10.258Z - info: Connected to DB!
+2015-07-08T11:00:48.367Z - info: Express server listening on port 1337
+2015-07-08T11:00:51.100Z - info: Connected to DB!
+2015-07-08T11:03:10.874Z - info: Express server listening on port 1337
+2015-07-08T11:03:12.669Z - info: Connected to DB!
+2015-07-08T11:05:25.650Z - info: Express server listening on port 1337
+2015-07-08T11:05:27.397Z - info: Connected to DB!
+2015-07-08T11:06:52.288Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T11:07:43.273Z - info: Express server listening on port 1337
+2015-07-08T11:07:44.522Z - info: Connected to DB!
+2015-07-08T11:07:49.787Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T11:08:58.622Z - info: Express server listening on port 1337
+2015-07-08T11:09:00.741Z - info: Connected to DB!
+2015-07-08T11:09:02.536Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T11:10:17.639Z - info: Express server listening on port 1337
+2015-07-08T11:10:18.840Z - info: Connected to DB!
+2015-07-08T11:10:19.786Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T11:10:57.764Z - info: Express server listening on port 1337
+2015-07-08T11:10:59.267Z - info: Connected to DB!
+2015-07-08T11:11:04.547Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T11:11:30.072Z - info: Express server listening on port 1337
+2015-07-08T11:12:21.580Z - info: Express server listening on port 1337
+2015-07-08T11:12:26.182Z - info: Connected to DB!
+2015-07-08T11:12:29.342Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T11:12:29.451Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T11:13:06.562Z - info: Express server listening on port 1337
+2015-07-08T11:13:07.640Z - info: Connected to DB!
+2015-07-08T11:13:11.569Z - error: Internal error(500): Cannot read property 'token' of undefined
+2015-07-08T11:13:33.498Z - info: Express server listening on port 1337
+2015-07-08T11:13:34.579Z - info: Connected to DB!
+2015-07-08T11:14:29.538Z - info: Express server listening on port 1337
+2015-07-08T11:14:30.660Z - info: Connected to DB!
+2015-07-08T11:14:54.936Z - info: Express server listening on port 1337
+2015-07-08T11:14:56.004Z - info: Connected to DB!
+2015-07-08T11:21:51.040Z - info: Express server listening on port 1337
+2015-07-08T11:21:54.302Z - info: Connected to DB!
+2015-07-08T11:31:48.232Z - info: Express server listening on port 1337
+2015-07-08T11:31:51.938Z - info: Connected to DB!
+2015-07-08T11:31:53.314Z - error: Internal error(500): access_token is not defined
+2015-07-08T11:32:15.375Z - info: Express server listening on port 1337
+2015-07-08T11:32:16.508Z - info: Connected to DB!
+2015-07-08T11:32:58.639Z - info: Express server listening on port 1337
+2015-07-08T11:33:02.903Z - info: Connected to DB!
+2015-07-08T11:35:36.500Z - info: Express server listening on port 1337
+2015-07-08T11:35:37.623Z - info: Connected to DB!
+2015-07-08T11:38:15.690Z - info: Express server listening on port 1337
+2015-07-08T11:38:16.835Z - info: Connected to DB!
+2015-07-08T11:38:27.646Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-08T11:38:40.704Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-08T11:39:23.135Z - info: /schedules access_token cACcoa5loAacUFcBjzZUaylnVnR0Xvb6

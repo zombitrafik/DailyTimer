@@ -1,7 +1,8 @@
 var User = require('../libs/mongoose').UserModel;
 var Token = require('../libs/mongoose').TokenModel;
 var log = require('../libs/log')(module);
-//routes
+var request = require('request');
+
 module.exports = function (router, passport) {
 
 	router.get('/', function (req, res) {
@@ -82,6 +83,46 @@ module.exports = function (router, passport) {
 		});
 	});
 
+	router.post('/google/getAccessById', function (req, res) {
+		var id = req.body.id;
+		var accessToken = req.body.accessToken;
+		var displayName = req.body.displayName;
+		var email = req.body.email;
+
+		request.get({
+			url: 'https://www.googleapis.com/oauth2/v1/tokeninfo?access_token='+accessToken
+		}, function (error, response, body) {
+			if(body.user_id==id){
+				User.findOne({'google.id':id}, function (err, user) {
+					if(err){
+						res.statusCode = 500;
+						res.json({message: 'Internal server error'});
+					}
+					if(!user){
+						var newUser = new User();
+						newUser.google.id = id;
+						newUser.google.token = accessToken;
+						newUser.google.name = displayName;
+						newUser.google.email = email;
+						newUser.generateToken();
+
+						newUser.save(function(err){
+							if(err)
+								throw err;
+							res.json({id: newUser._id});
+						});
+					}else{
+						res.json({id: user._id});
+					}
+				});
+			}else{
+				res.json({message: 'Invalid access_token'});
+				return;
+			}
+		});
+	});
+
+
 	/****************/
 	/* TOKEN ROUTES */
 	/****************/
@@ -92,6 +133,21 @@ module.exports = function (router, passport) {
 				user.generateToken();
 			req.user = user;
 			res.redirect('/auth/profile');
+		});
+	});
+
+	router.post('/getTokenById', function (req, res) {
+		var id = req.body.id;
+		User.findOne({ _id : id}).populate('token').exec(function (err, user) {
+			if(user === undefined){
+				res.statusCode = 404;
+				res.json({message: 'User not found'});
+				return;
+			}
+			if(user.token == null)
+				user.generateToken();
+			res.json({token: user.token.value});
+			
 		});
 	});
 
