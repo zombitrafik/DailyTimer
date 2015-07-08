@@ -25,12 +25,7 @@ var Item = new Schema({
 
 var Schedule = new Schema({
     title: String,
-    schedule: [Item],
-    private: [User],
-    creator: {
-    	type: User,
-    	required: true
-    } 
+    schedule: [Item]
 });
 
 var ScheduleModel = mongoose.model('Schedule', Schedule);
