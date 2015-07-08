@@ -1,5 +1,5 @@
 {
-    "port" : 1337,
+    "port" : 3000,
     "mongoose" : {
         "uri" : "mongodb://ds059821.mongolab.com:59821/schedule",
         "dbpassword" : "J87jQZz7hVMqaS7X",
@@ -10,6 +10,6 @@
     "google" : {
     	"clientID" : "221234006857-v9q7udkftic58sicm9a3ktldicdbh82p.apps.googleusercontent.com",
     	"clientSecret" : "_pysN9yPabCr2dXbwbAJnWIs",
-    	"callbackURL" : "http://localhost:1337/auth/google/callback"
+    	"callbackURL" : "http://localhost:3000/auth/google/callback"
     }
 }
