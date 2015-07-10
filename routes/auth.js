@@ -92,6 +92,7 @@ module.exports = function (router, passport) {
 		request.get({
 			url: 'https://www.googleapis.com/oauth2/v1/tokeninfo?access_token='+accessToken
 		}, function (error, response, body) {
+			body = JSON.parse(body);
 			if(body.user_id==id){
 				User.findOne({'google.id':id}, function (err, user) {
 					if(err){

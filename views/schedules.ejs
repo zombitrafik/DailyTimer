@@ -1,0 +1,95 @@
+<!-- views/schedules.ejs -->
+<!doctype html>
+<html ng-app="app">
+<head>
+    <title>DailyTimer schedules</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <style>
+        body        { padding-top:80px; word-wrap:break-word; }
+        .list-group {
+            width: 60%;
+            margin: 0px auto;
+        }
+        .list-group-item {
+            width: 100%;
+        }
+    </style>
+</head>
+<body ng-controller="Ctrl">
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1><span class="fa fa-list"></span> Schedules</h1>
+    </div>
+    <ul class="fa-ul" ng-if="isLoading" >
+      <li><i class="fa-li fa fa-spinner fa-pulse"></i> loading...</li>
+    </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="todolist not-done">
+                 <h1>Todos</h1>
+                    <input type="text" class="form-control add-todo" placeholder="Add todo">
+                        <button id="checkAll" class="btn btn-success">Mark all as done</button>
+                        
+                        <hr>
+                        <ul id="sortable" class="list-unstyled">
+                        <li class="ui-state-default">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" />Take out the trash</label>
+                            </div>
+                        </li>
+                        <li class="ui-state-default">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" />Buy bread</label>
+                            </div>
+                        </li>
+                        <li class="ui-state-default">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" />Teach penguins to fly</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="todo-footer">
+                        <strong><span class="count-todos"></span></strong> Items Left
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="todolist">
+                 <h1>Already Done</h1>
+                    <ul id="done-items" class="list-unstyled">
+                        <li>Some item <button class="remove-item btn btn-default btn-xs pull-right"><span class="glyphicon glyphicon-remove"></span></button></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+<script type="text/javascript">
+    var app = angular.module('app', []);
+    
+    app.controller('Ctrl', function ($scope, $http) {
+
+        $scope.token = '<%= token.value %>';
+        $scope.isLoading = true;
+        loadSchedules();
+
+        function loadSchedules () {
+            $http.get('http://localhost:3000/api/schedules?access_token='+$scope.token).success(function (response) {
+                $scope.schedules = response.schedules;
+                $scope.isLoading = false;
+            });
+        }
+
+        $scope.OpenSchedule = function (id) {
+            console.log('open ' + id);
+        }
+    }); 
+
+</script>
+</body>
+</html>

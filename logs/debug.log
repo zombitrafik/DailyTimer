@@ -473,3 +473,178 @@ Cannot read property 'id' of undefined
 2015-07-08T21:35:43.195Z - info: /schedules/559d97a32189f2441ab40557 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
 2015-07-08T21:35:43.845Z - info: schedule updated
 2015-07-08T21:36:38.546Z - info: /schedules/559d97a32189f2441ab40557 access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK
+2015-07-09T08:35:50.326Z - info: Express server listening on port 3000
+2015-07-09T08:35:51.468Z - info: Connected to DB!
+2015-07-09T08:40:32.719Z - info: Express server listening on port 3000
+2015-07-09T08:40:33.731Z - info: Connected to DB!
+2015-07-09T08:40:52.650Z - error: Internal error(500): Failed to lookup view "schedules.ejs" in views directory "d:\heroku\DailyTimer\views"
+2015-07-09T08:41:43.166Z - info: Express server listening on port 3000
+2015-07-09T08:41:44.143Z - info: Connected to DB!
+2015-07-09T08:42:18.770Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-09T08:42:44.943Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-09T08:42:54.085Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-09T08:43:07.876Z - info: Express server listening on port 3000
+2015-07-09T08:43:08.905Z - info: Connected to DB!
+2015-07-09T08:43:19.092Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-09T08:43:30.938Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-09T08:43:31.886Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-09T08:43:42.920Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-09T08:44:03.633Z - info: Express server listening on port 3000
+2015-07-09T08:44:04.603Z - info: Connected to DB!
+2015-07-09T08:44:07.353Z - error: Internal error(500): Can't set headers after they are sent.
+2015-07-09T08:45:26.176Z - info: Express server listening on port 3000
+2015-07-09T08:45:27.231Z - info: Connected to DB!
+2015-07-09T08:54:39.506Z - info: Express server listening on port 3000
+2015-07-09T08:54:40.535Z - info: Connected to DB!
+2015-07-09T08:55:11.496Z - info: Express server listening on port 3000
+2015-07-09T08:55:12.468Z - info: Connected to DB!
+2015-07-09T09:05:00.217Z - info: Express server listening on port 3000
+2015-07-09T09:05:01.269Z - info: Connected to DB!
+2015-07-09T09:05:07.504Z - error: Internal error(500): Object { _id: 559d78706faca91013ce1df2,
+  __v: 0,
+  token: 559d789b6faca91013ce1df3,
+  google: {},
+  local: 
+   { password: '$2a$09$WkEHSoU4gDdmUeGqbVg2TeWF7Z618f.EWjpqEsPqvCZ8G79ZX1w5u',
+     username: '2' } } has no method 'exec'
+2015-07-09T09:05:17.853Z - error: Internal error(500): Object { _id: 559d78706faca91013ce1df2,
+  __v: 0,
+  token: 559d789b6faca91013ce1df3,
+  google: {},
+  local: 
+   { password: '$2a$09$WkEHSoU4gDdmUeGqbVg2TeWF7Z618f.EWjpqEsPqvCZ8G79ZX1w5u',
+     username: '2' } } has no method 'exec'
+2015-07-09T09:06:00.231Z - error: Internal error(500): Object { _id: 559d78706faca91013ce1df2,
+  __v: 0,
+  token: 559d789b6faca91013ce1df3,
+  google: {},
+  local: 
+   { password: '$2a$09$WkEHSoU4gDdmUeGqbVg2TeWF7Z618f.EWjpqEsPqvCZ8G79ZX1w5u',
+     username: '2' } } has no method 'exec'
+2015-07-09T09:06:05.981Z - info: Express server listening on port 3000
+2015-07-09T09:06:06.953Z - info: Connected to DB!
+2015-07-09T09:07:53.612Z - info: Express server listening on port 3000
+2015-07-09T09:07:54.637Z - info: Connected to DB!
+2015-07-09T09:08:52.638Z - info: Express server listening on port 3000
+2015-07-09T09:08:53.640Z - info: Connected to DB!
+2015-07-09T09:08:56.910Z - error: Internal error(500): d:\heroku\DailyTimer\views\schedules.ejs:16
+    14| <div class="container">
+    15|    
+ >> 16| <%= user %>
+    17| </div>
+    18| <script type="text/javascript">
+    19|     var app = angular.module('app', []);
+
+user is not defined
+2015-07-09T09:42:27.122Z - info: /schedules access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK
+2015-07-09T09:42:39.123Z - info: /schedules access_token RUXoSWICegffZURyR1QKUCbYJSrwjKpK
+2015-07-09T09:42:56.873Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:43:04.966Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:44:21.782Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:45:00.489Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:45:21.499Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:45:33.514Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:46:01.427Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:46:27.495Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:46:52.778Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:47:41.674Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:47:58.932Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:48:29.389Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:49:01.133Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:49:10.827Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:50:24.411Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:55:51.148Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:56:13.214Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:56:52.094Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:57:06.445Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:57:25.980Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:57:39.113Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:57:51.416Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:58:15.239Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:58:53.622Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:59:09.241Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:59:19.400Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:59:29.344Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:59:35.861Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:59:44.040Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T09:59:49.630Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:00:02.666Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:00:25.727Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:00:39.371Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:01:22.174Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:01:27.867Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:02:11.679Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:02:16.736Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:02:25.910Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:02:40.083Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:02:46.366Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:03:16.213Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:03:25.181Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:03:28.145Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:03:33.572Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:03:45.626Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:03:52.816Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:04:04.221Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:04:16.584Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:04:28.358Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:04:37.705Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:04:45.048Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:14:22.848Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:14:31.314Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:15:00.820Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:15:10.165Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:15:14.876Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:15:26.632Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:15:50.466Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:16:02.394Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:16:12.245Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:16:28.439Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:16:42.796Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:16:50.981Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:17:03.651Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:17:14.619Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:17:24.154Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:17:35.908Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:17:42.923Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:18:01.951Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:18:19.351Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:18:28.241Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:18:51.242Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:19:02.545Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:20:57.707Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:21:04.993Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:21:20.720Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:21:41.217Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:21:51.640Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:23:12.913Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:24:13.162Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:24:28.366Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:24:57.126Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:26:38.723Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:27:09.164Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:28:40.278Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:28:54.400Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:29:28.652Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:30:01.755Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:30:54.613Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-09T10:33:30.826Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-10T12:46:26.402Z - info: Express server listening on port 3000
+2015-07-10T12:46:27.430Z - info: Connected to DB!
+2015-07-10T12:52:27.012Z - info: Express server listening on port 3000
+2015-07-10T12:52:28.072Z - info: Connected to DB!
+2015-07-10T12:52:44.164Z - info: Express server listening on port 3000
+2015-07-10T12:52:45.136Z - info: Connected to DB!
+2015-07-10T12:53:21.865Z - info: Express server listening on port 3000
+2015-07-10T12:53:22.861Z - info: Connected to DB!
+2015-07-10T12:54:15.647Z - info: Express server listening on port 3000
+2015-07-10T12:54:16.692Z - info: Connected to DB!
+2015-07-10T12:54:30.479Z - info: Express server listening on port 3000
+2015-07-10T12:54:31.458Z - info: Connected to DB!
+2015-07-10T12:55:49.824Z - info: Express server listening on port 3000
+2015-07-10T12:55:50.865Z - info: Connected to DB!
+2015-07-10T12:56:59.026Z - info: Express server listening on port 3000
+2015-07-10T12:57:00.011Z - info: Connected to DB!
+2015-07-10T12:57:18.055Z - info: Express server listening on port 3000
+2015-07-10T12:57:19.037Z - info: Connected to DB!
+2015-07-10T12:57:35.335Z - info: Express server listening on port 3000
+2015-07-10T12:57:36.381Z - info: Connected to DB!

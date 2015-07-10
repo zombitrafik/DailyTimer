@@ -14,8 +14,9 @@
 
     <div class="page-header text-center">
         <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/schedules" class="btn btn-success"><span class="fa fa-list"></span> My schedules</a>
         <a href="/api/info" class="btn btn-info"><span class="fa fa-info"></span> API Guide</a>
-        <a href="/auth/logout" class="btn btn-default btn-sm">Logout</a>
+        <a href="/auth/logout" class="btn btn-default">Logout</a>
         <% if(user.token == null) { %>
             <br /><br /><a href="/auth/getToken" class="btn btn-warning">Generate Token</a>
         <% } else { %>

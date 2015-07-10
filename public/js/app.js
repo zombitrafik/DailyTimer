@@ -67,12 +67,12 @@ app.controller('Ctrl', function ($scope, $http) {
 
 	$scope.Exchange = function  () {
 		var body = {
-			id: '123',
+			id: '111884272453300501793',
 			displayName: '123',
-			accessToken: '123',
+			accessToken: 'ya29.rAHkdya2cteKzFVWhOM5L7yMyoxrtwpSmPhzsAOYG6Dy7-iC4J1eiCYb3Psm79R3Bv-WSnZ391L9XGdY0xrHQGMKZ8bcJBCaNf9wQAjk47Md8AGaFvJO',        
 			email: '123'
 		};
-		$http.post('http://localhost:1337/auth/google/getAccessById', body).success(function (response) {
+		$http.post('http://localhost:3000/auth/google/getAccessById', body).success(function (response) {
 			console.log(response);
 		});
 	}
