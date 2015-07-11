@@ -78,7 +78,8 @@ var TokenModel = mongoose.model('Token', tokenSchema);
 var Item = new Schema({
 	title: String,
 	time: String,
-	color: String
+	fontColor: String,
+	bgColor: String
 });
 
 var Schedule = new Schema({

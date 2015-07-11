@@ -1,0 +1,14 @@
+<button ng-click="createSchedule()" class="btn btn-primary">CREATE+</button>
+
+<div ng-repeat="schedule in schedules">
+	<button ng-click="deleteSchedule(schedule._id)" class="btn btn-xs btn-danger">DELETE</button>
+	<button ng-click="editSchedule(schedule._id)" class="btn btn-xs btn-warning">EDIT</button>
+	<button ng-click="detailSchedule(schedule._id)" class="btn btn-xs btn-info">DETAILS</button>
+	<br />
+	title: {{schedule.title}}<br />
+	creator: {{schedule.creator}}<br />
+	<span class="label label-success" ng-if='!schedule.isPrivate'>Public</span>
+	<span class="label label-danger" ng-if='schedule.isPrivate'>Private</span>
+	items count: {{schedule.schedule.length}}
+</div>
+

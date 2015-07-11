@@ -1,0 +1,8 @@
+<h2>Create schedule</h2>
+<input type="text" placeholder="Title for schedule" ng-model="schedule.title"/><br />
+<input type="checkbox" ng-model="schedule.isPrivate"/> isPrivate
+<div ng-repeat="item in schedule.schedule">
+	<my-item item="item"></my-item>
+</div>
+<button ng-click="AddItem()" class="btn btn-xs btn-success">ADD</button>
+<button ng-click="Save()" class="btn btn-success">SAVE</button>

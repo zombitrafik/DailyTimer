@@ -1,0 +1,10 @@
+<h2>Edit schedule</h2>
+title: {{detailsSchedule.title}}<br />
+creator: {{detailsSchedule.creator}}<br />
+items count: {{detailsSchedule.schedule.length}}<br />
+<ul ng-repeat="item in detailsSchedule.schedule">
+	{{$index + 1}}
+	<li>time: {{item.time}}</li>
+	<li>title: {{item.title}}</li>
+	<li>color: {{item.color}}</li>
+</ul>

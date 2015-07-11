@@ -1,0 +1,17 @@
+{
+  "name": "Schedule",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zombitrafik/DailyTimer",
+  "authors": [
+    "zombitrafik"
+  ],
+  "description": "DailyTimer Schedule",
+  "license": "MIT",
+  "dependencies": {
+    "angularjs": "~1.4.2",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.3.0",
+    "angular-route": "~1.4.2",
+    "bootstrap-timepicker": "~0.2.6"
+  }
+}

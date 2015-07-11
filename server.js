@@ -41,7 +41,8 @@ app.use(passport.session());
 
 app.use(flash());
 
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || config.get('port'));
 // routes
@@ -53,7 +54,8 @@ app.use('/api', Schedules);
 app.use(function(req, res, next){
     res.status(404);
     log.debug('Not found URL: %s',req.url);
-    res.json({ error: 'Not found' });
+    res.redirect('/schedules');
+    //res.json({ error: 'Not found' });
     return;
 });
 
