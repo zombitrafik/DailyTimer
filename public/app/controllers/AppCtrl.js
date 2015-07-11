@@ -4,7 +4,7 @@ var AppCtrl = angular.module('AppCtrl', [])
 		$scope.items = [];
 
 		$scope.loadSchedules = function () {
-			$http.get('http://localhost:3000/api/schedules?access_token='+$scope.token).success(function (response) {
+			$http.get('https://sleepy-river-1523.herokuapp.com/api/schedules?access_token='+$scope.token).success(function (response) {
 				$scope.schedules = response.schedules;
 			});
 		};
@@ -37,7 +37,7 @@ var AppCtrl = angular.module('AppCtrl', [])
 	}])
 	.controller('DetailCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
 		$scope.loadSchedule = function () {
-			$http.get('http://localhost:3000/api/schedules/'+$routeParams.id+'?access_token='+$scope.token).success(function (response) {
+			$http.get('https://sleepy-river-1523.herokuapp.com/api/schedules/'+$routeParams.id+'?access_token='+$scope.token).success(function (response) {
 				$scope.detailsSchedule = response.schedule;
 			});
 		};
@@ -49,7 +49,7 @@ var AppCtrl = angular.module('AppCtrl', [])
 	}])
 	.controller('EditCtrl', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
 		$scope.loadSchedule = function () {
-			$http.get('http://localhost:3000/api/schedules/'+$routeParams.id+'?access_token='+$scope.token).success(function (response) {
+			$http.get('https://sleepy-river-1523.herokuapp.com/api/schedules/'+$routeParams.id+'?access_token='+$scope.token).success(function (response) {
 				$scope.detailsSchedule = response.schedule;
 			});
 		};
@@ -111,7 +111,7 @@ var AppCtrl = angular.module('AppCtrl', [])
 
 			var body = $scope.schedule;
 
-			$http.post('http://localhost:3000/api/schedules?access_token=' + $scope.token, body).success(function (response) {
+			$http.post('https://sleepy-river-1523.herokuapp.com/api/schedules?access_token=' + $scope.token, body).success(function (response) {
 				console.log(response);
 			});
 		};
