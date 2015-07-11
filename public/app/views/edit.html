@@ -1,10 +1,8 @@
-<h2>Edit schedule</h2>
-title: {{detailsSchedule.title}}<br />
-creator: {{detailsSchedule.creator}}<br />
-items count: {{detailsSchedule.schedule.length}}<br />
-<ul ng-repeat="item in detailsSchedule.schedule">
-	{{$index + 1}}
-	<li>time: {{item.time}}</li>
-	<li>title: {{item.title}}</li>
-	<li>color: {{item.color}}</li>
-</ul>
+<h2>Create schedule</h2>
+<input type="text" placeholder="Title for schedule" ng-model="schedule.title"/><br />
+<input type="checkbox" ng-model="schedule.isPrivate"/> isPrivate
+<div ng-repeat="item in schedule.schedule">
+	<my-item item="item" delete-item="deleteItem"></my-item>
+</div>
+<button ng-click="AddItem()" class="btn btn-xs btn-success">ADD</button>
+<button ng-click="Save()" class="btn btn-success">SAVE</button>

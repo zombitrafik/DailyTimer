@@ -1,13 +1,16 @@
-title: <input type="text" ng-model="item.title"><br />
-time: <div class="input-append bootstrap-timepicker">
-            <input id="timepicker{{item.tid}}" type="text" class="input-small" ng-model="item.time">
-            <span class="add-on"><i class="glyphicon glyphicon-time"></i></span>
-        </div>
-bgColor: <div class="input-group" id="colorpicker_bg{{item.tid}}">
-    <input type="text" value="" class="form-control" ng-model="item.bgColor" />
-    <span class="input-group-addon"><i></i></span>
+<div>
+	title: <input type="text" ng-model="item.title"><br />
+	time: <div class="input-append bootstrap-timepicker">
+	            <input id="timepicker{{item.tid}}" type="text" class="input-small" ng-model="item.time">
+	            <span class="add-on"><i class="glyphicon glyphicon-time"></i></span>
+	        </div>
+	bgColor: <div class="input-group" id="colorpicker_bg{{item.tid}}">
+	    <input type="text" value="" class="form-control" ng-model="item.bgColor" />
+	    <span class="input-group-addon"><i></i></span>
+	</div>
+	fontColor: <div class="input-group" id="colorpicker_font{{item.tid}}">
+	    <input type="text" value="" class="form-control" ng-model="item.fontColor" />
+	    <span class="input-group-addon"><i></i></span>
+	</div> 
+	<button ng-click="deleteItem(item.tid)" class="btn btn-xs btn-danger">delete</button>
 </div>
-fontColor: <div class="input-group" id="colorpicker_font{{item.tid}}">
-    <input type="text" value="" class="form-control" ng-model="item.fontColor" />
-    <span class="input-group-addon"><i></i></span>
-</div> 

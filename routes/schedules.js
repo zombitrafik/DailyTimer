@@ -101,13 +101,11 @@ module.exports = function (router, passport) {
 
 			return TokenModel.findOne({value : req.query.access_token}).populate('user').exec(function (err, token) {
 				if(schedule.creator==token.user._id){
+					
 
-					if(req.body.title)
-						schedule.title = req.body.title;
-					if(req.body.schedule)
-						schedule.schedule = req.body.schedule;
-					if(req.body.isPrivate)
-						schedule.isPrivate = req.body.isPrivate;
+					schedule.title = req.body.title;
+					schedule.schedule = req.body.schedule;
+					schedule.isPrivate = req.body.isPrivate;
 
 					return schedule.save(function (err) {
 						if (!err) {
