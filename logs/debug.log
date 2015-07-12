@@ -1071,3 +1071,6 @@ user is not defined
 2015-07-11T22:33:50.438Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
 2015-07-11T22:33:56.065Z - info: /schedules/55a15c7cc089cb8c08ece0f8 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
 2015-07-11T22:33:59.571Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-12T11:05:20.536Z - info: Express server listening on port 3000
+2015-07-12T13:34:51.785Z - info: Express server listening on port 3000
+2015-07-12T13:34:53.159Z - info: Connected to DB!

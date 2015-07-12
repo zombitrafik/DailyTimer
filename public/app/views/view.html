@@ -1,5 +1,8 @@
 <button ng-click="createSchedule()" class="btn btn-primary">CREATE+</button>
 
+<ul class="fa-ul" style="margin-left: 50px;">
+  <li style="line-height: 40px;"><i class="fa-li fa fa-spinner fa-pulse fa-2x"></i>Loading ...</li>
+</ul>
 <div ng-repeat="schedule in schedules">
 	<button ng-click="deleteSchedule(schedule._id)" class="btn btn-xs btn-danger">DELETE</button>
 	<button ng-click="editSchedule(schedule._id)" class="btn btn-xs btn-warning">EDIT</button>
@@ -11,4 +14,3 @@
 	<span class="label label-danger" ng-if='schedule.isPrivate'>Private</span>
 	items count: {{schedule.schedule.length}}
 </div>
-
