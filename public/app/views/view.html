@@ -1,16 +1,35 @@
-<button ng-click="createSchedule()" class="btn btn-primary">CREATE+</button>
+<div class="jumbotron">
+	<ul class="fa-ul" ng-if="isloading">
+		<li style="line-height: 40px;"><i class="fa-li fa fa-spinner fa-pulse fa-2x"></i>Loading ...</li>
+	</ul>
+	<div ng-if="!isloading">
+		<button ng-click="createSchedule()" class="btn btn-success">CREATE+</button>
+		
 
-<ul class="fa-ul" style="margin-left: 50px;">
-  <li style="line-height: 40px;"><i class="fa-li fa fa-spinner fa-pulse fa-2x"></i>Loading ...</li>
-</ul>
-<div ng-repeat="schedule in schedules">
-	<button ng-click="deleteSchedule(schedule._id)" class="btn btn-xs btn-danger">DELETE</button>
-	<button ng-click="editSchedule(schedule._id)" class="btn btn-xs btn-warning">EDIT</button>
-	<button ng-click="detailSchedule(schedule._id)" class="btn btn-xs btn-info">DETAILS</button>
-	<br />
-	title: {{schedule.title}}<br />
-	creator: {{schedule.creator}}<br />
-	<span class="label label-success" ng-if='!schedule.isPrivate'>Public</span>
-	<span class="label label-danger" ng-if='schedule.isPrivate'>Private</span>
-	items count: {{schedule.schedule.length}}
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th class="text-center">Title</th>
+					<th class="text-center">Items count</th>
+					<th class="text-center">Access</th>
+					<th class="text-center">Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="schedule in schedules">
+			        <td class="text-center">{{schedule.title}}</td>
+			        <td class="text-center">{{schedule.schedule.length}}</td>
+			        <td class="text-center">
+			        	<span class="label label-success" ng-if='!schedule.isPrivate'>public</span>
+						<span class="label label-danger" ng-if='schedule.isPrivate'>private</span>
+			        </td>
+			        <td class="text-center">
+						<button ng-click="detailSchedule(schedule._id)" class="btn btn-xs btn-info">DETAILS</button>
+						<button ng-click="editSchedule(schedule._id)" class="btn btn-xs btn-warning">EDIT</button>
+						<button ng-click="deleteSchedule(schedule._id)" class="btn btn-xs btn-danger">DELETE</button>
+			        </td>
+			    </tr>
+			</tbody>
+  		</table>
+	</div>
 </div>

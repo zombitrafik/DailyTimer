@@ -1,11 +1,21 @@
-<h2>Detail info</h2>
-title: {{detailsSchedule.title}}<br />
-creator: {{detailsSchedule.creator}}<br />
-items count: {{detailsSchedule.schedule.length}}<br />
-<ul ng-repeat="item in detailsSchedule.schedule">
-	{{$index + 1}}
-	<li>time: {{item.time}}</li>
-	<li>title: {{item.title}}</li>
-	<li>fontColor: {{item.fontColor}}</li>
-	<li>bgColor: {{item.bgColor}}</li>
-</ul>
+<div class="jumbotron">
+	<ul class="fa-ul" ng-if="isloading">
+		<li style="line-height: 40px;"><i class="fa-li fa fa-spinner fa-pulse fa-2x"></i>Loading ...</li>
+	</ul>
+	<div ng-if="!isloading">
+		<h2 class="text-center">Detail info</h2>
+		<h4 class="text-center text-info">{{detailsSchedule.title}}</h4>
+		<div class="text-center">
+			<button ng-click="editSchedule(detailsSchedule._id)" class="btn btn-xs btn-warning">EDIT</button>
+			<button ng-click="deleteSchedule(detailsSchedule._id)" class="btn btn-xs btn-danger">DELETE</button>	
+		</div><br />
+		<div ng-repeat="item in detailsSchedule.schedule">
+			<div class="detailItem" style="background: {{item.bgColor}}; color: {{item.fontColor}};">
+				{{item.title}} {{item.time}}
+			</div>
+		</div><br />
+		<div class="text-center">
+			<button onclick="window.history.back();" class="btn btn-xs btn-default">BACK</button>
+		</div>
+	</div>
+</div>

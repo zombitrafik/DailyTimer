@@ -3,13 +3,17 @@ var AppCtrl = angular.module('AppCtrl', [])
 		$scope.schedules = [];
 		$scope.items = [];
 
+		$scope.isloading = true;
+
 		$scope.loadSchedules = function () {
 			$http.get('https://sleepy-river-1523.herokuapp.com/api/schedules?access_token='+$scope.token).success(function (response) {
 				$scope.schedules = response.schedules;
+				$scope.isloading = false;
 			});
 		};
 
 		$scope.deleteSchedule = function (id) {
+			$scope.isloading = true;
 			$http.delete('https://sleepy-river-1523.herokuapp.com/api/schedules/' + id + '?access_token='+$scope.token).success(function (response) {
 				console.log(response);
 				init();
@@ -34,10 +38,24 @@ var AppCtrl = angular.module('AppCtrl', [])
 		init();
 
 	}])
-	.controller('DetailCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
+	.controller('DetailCtrl', ['$scope', '$http', '$routeParams', '$location', function($scope, $http, $routeParams, $location){
+		$scope.isloading = true;
 		$scope.loadSchedule = function () {
 			$http.get('https://sleepy-river-1523.herokuapp.com/api/schedules/'+$routeParams.id+'?access_token='+$scope.token).success(function (response) {
 				$scope.detailsSchedule = response.schedule;
+				$scope.isloading = false;
+			});
+		};
+
+		$scope.editSchedule = function (id) {
+			$location.url('/edit?id='+id);
+		};
+
+		$scope.deleteSchedule = function (id) {
+			$scope.isloading = true;
+			$http.delete('https://sleepy-river-1523.herokuapp.com/api/schedules/' + id + '?access_token='+$scope.token).success(function (response) {
+				console.log(response);
+				$location.url('/schedules');
 			});
 		};
 
@@ -48,6 +66,8 @@ var AppCtrl = angular.module('AppCtrl', [])
 	}])
 	.controller('EditCtrl', ['$scope', '$http', '$routeParams', '$location', function ($scope, $http, $routeParams, $location) {
 		
+		$scope.isloading = true;
+
 		function Item(tid, config) {
 			this.tid = tid;
 			if(config!=null) {
@@ -106,6 +126,17 @@ var AppCtrl = angular.module('AppCtrl', [])
 					s[i] = new Item(currentItem, s[i]);
 					currentItem++;
 				}
+				$scope.isloading = false;
+				setTimeout(function () {
+					$('#isPrivateEdit').bootstrapSwitch({
+						onText:'public',
+						offText:'private',
+						onColor:'success',
+						offColor:'danger',
+						size: 'small',
+						state: true
+					});
+				}, 0);
 			});
 		};
 
@@ -118,7 +149,7 @@ var AppCtrl = angular.module('AppCtrl', [])
 			if($scope.schedule.schedule.length == 0) return; // empty items
 
 			var body = $scope.schedule;
-
+			$scope.isloading = true;
 			$http.put('https://sleepy-river-1523.herokuapp.com/api/schedules/' + $routeParams.id + '?access_token='+$scope.token, body).success(function (response) {
 				$location.url('/schedules');
 			});
@@ -131,6 +162,8 @@ var AppCtrl = angular.module('AppCtrl', [])
 	}])
 	.controller('CreateCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
 		
+		$scope.isloading = true;
+
 		function Item(tid) {
 			this.title = '';
 			this.tid = tid;
@@ -188,6 +221,8 @@ var AppCtrl = angular.module('AppCtrl', [])
 
 			var body = $scope.schedule;
 
+			$scope.isloading = true;
+
 			$http.post('https://sleepy-river-1523.herokuapp.com/api/schedules?access_token=' + $scope.token, body).success(function (response) {
 				console.log(response);
 				$location.url('/schedules');
@@ -198,6 +233,17 @@ var AppCtrl = angular.module('AppCtrl', [])
 			var s = $scope.schedule.schedule;
 			s.push(new Item(currentItem));
 			currentItem++;
+			$scope.isloading = false;
+			setTimeout(function () {
+				$('#isPrivate').bootstrapSwitch({
+					onText:'public',
+					offText:'private',
+					onColor:'success',
+					offColor:'danger',
+					size: 'small',
+					state: true
+				});
+			}, 0);
 		};
 
 		init();
@@ -220,14 +266,20 @@ var AppCtrl = angular.module('AppCtrl', [])
 	            		$('#timepicker'+$scope.item.tid).timepicker({
 	            			showSeconds: true,
 	            			showMeridian: false,
-	            			defaultTime: 'current'
-	            		});
+	            			defaultTime: '00:00:00'
+	            		}).on('changeTime.timepicker', function (e) {
+	            			e.time.value.split(':').forEach(function (el) {
+	            				if(parseInt(el)<10) el = '0'+parseInt(el);
+	            			});
+						});
 	            		$('#colorpicker_bg'+$scope.item.tid).colorpicker().on('changeColor.colorpicker', function(event){
 							$scope.item.bgColor = $scope.item.rgbToStr(event.color.toRGB());
+							$('#colorpicker_bg'+$scope.item.tid).find('input').trigger('input');
 						});
 
 	            		$('#colorpicker_font'+$scope.item.tid).colorpicker().on('changeColor.colorpicker', function(event){
 							$scope.item.fontColor = $scope.item.rgbToStr(event.color.toRGB());
+							$('#colorpicker_font'+$scope.item.tid).find('input').trigger('input');
 						});
 	            	}, 0);
 	            }

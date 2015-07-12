@@ -1,8 +1,24 @@
-<h2>Create schedule</h2>
-<input type="text" placeholder="Title for schedule" ng-model="schedule.title"/><br />
-<input type="checkbox" ng-model="schedule.isPrivate"/> isPrivate
-<div ng-repeat="item in schedule.schedule">
-	<my-item item="item" delete-item="deleteItem"></my-item>
+<div class="jumbotron">
+	<ul class="fa-ul" ng-if="isloading">
+		<li style="line-height: 40px;"><i class="fa-li fa fa-spinner fa-pulse fa-2x"></i>Loading ...</li>
+	</ul>
+	<div ng-if="!isloading">
+		<h2 class="text-center">Edit schedule</h2>
+		<input type="text" class="form-control" placeholder="Title for schedule" ng-model="schedule.title"/><br />
+
+		Choose access: <input type="checkbox" ng-model="schedule.isPrivate" id="isPrivateEdit" /><br /><br />
+
+		<div ng-repeat="item in schedule.schedule">
+			<my-item item="item" delete-item="deleteItem"></my-item>
+		</div>
+		<div style="margin: 5px;">
+			<button ng-click="AddItem()" class="btn btn-xs btn-success">ADD ITEM</button><br />	
+		</div>
+		<br />
+		<div class="text-center" >
+			<button ng-click="Save()" class="btn btn-success">SAVE</button>
+			<button onclick="window.history.back();" class="btn btn-default">BACK</button>
+		</div>
+		
+	</div>
 </div>
-<button ng-click="AddItem()" class="btn btn-xs btn-success">ADD</button>
-<button ng-click="Save()" class="btn btn-success">SAVE</button>
