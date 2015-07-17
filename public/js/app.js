@@ -89,4 +89,15 @@ app.controller('Ctrl', function ($scope, $http) {
 	}
 
 */
+
+
+	$scope.Sync = function () {
+		var body = [
+			{_id: '55a15c7cc089cb8c08ece0f8'},
+			{_id: 2}
+		];
+		$http.post('http://localhost:3000/api/sync?access_token=szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ', body).success(function (response) {
+			console.log(response);
+		});
+	};
 });

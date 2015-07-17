@@ -1312,3 +1312,40 @@ user is not defined
 2015-07-12T21:26:24.384Z - info: /schedules/55a15c7cc089cb8c08ece0f8 access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
 2015-07-12T21:26:27.009Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
 2015-07-12T21:26:38.213Z - info: /schedules access_token Qx4DjqqSHSRhtHNpBrgyMWiiNpMxeFoi
+2015-07-17T10:10:56.504Z - info: Express server listening on port 3000
+2015-07-17T10:10:57.570Z - info: Connected to DB!
+2015-07-17T10:20:54.649Z - info: Express server listening on port 3000
+2015-07-17T10:20:55.670Z - info: Connected to DB!
+2015-07-17T10:27:18.466Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T10:28:46.328Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T10:29:03.803Z - info: Express server listening on port 3000
+2015-07-17T10:29:04.849Z - info: Connected to DB!
+2015-07-17T10:29:10.533Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T10:29:43.913Z - info: Express server listening on port 3000
+2015-07-17T10:29:44.892Z - info: Connected to DB!
+2015-07-17T10:29:50.401Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T10:30:25.976Z - info: Express server listening on port 3000
+2015-07-17T10:30:26.958Z - info: Connected to DB!
+2015-07-17T10:30:31.248Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T10:30:51.556Z - info: Express server listening on port 3000
+2015-07-17T10:30:52.593Z - info: Connected to DB!
+2015-07-17T10:30:57.731Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T10:35:37.672Z - info: Express server listening on port 3000
+2015-07-17T10:35:38.710Z - info: Connected to DB!
+2015-07-17T10:35:44.891Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T10:37:09.862Z - info: Express server listening on port 3000
+2015-07-17T10:37:10.901Z - info: Connected to DB!
+2015-07-17T10:37:20.013Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T10:41:16.235Z - info: Express server listening on port 3000
+2015-07-17T10:41:17.272Z - info: Connected to DB!
+2015-07-17T10:41:22.155Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T12:04:23.140Z - info: Express server listening on port 3000
+2015-07-17T12:04:24.181Z - info: Connected to DB!
+2015-07-17T12:04:34.637Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T12:05:06.118Z - info: Express server listening on port 3000
+2015-07-17T12:05:07.098Z - info: Connected to DB!
+2015-07-17T12:05:12.869Z - info: /sync access_token szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ
+2015-07-17T12:11:16.085Z - info: Express server listening on port 3000
+2015-07-17T12:11:17.133Z - info: Connected to DB!
+2015-07-17T12:22:28.648Z - info: Express server listening on port 3000
+2015-07-17T12:22:29.703Z - info: Connected to DB!

@@ -74,7 +74,6 @@ User.methods.validatePassword = function(password) {
 var UserModel = mongoose.model('User', User);
 var TokenModel = mongoose.model('Token', tokenSchema);
 
-
 var Item = new Schema({
 	title: String,
 	time: String,
@@ -90,8 +89,13 @@ var Schedule = new Schema({
     	required: true,
     	default: true
     },
-    creator: String
+    creator: String,
+    lastEditTime: String
 });
+
+Schedule.statics.getById = function (id, cb) {
+	return this.findById(id).exec(cb);	
+};
 
 var ScheduleModel = mongoose.model('Schedule', Schedule);
 

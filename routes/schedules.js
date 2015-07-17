@@ -1,5 +1,7 @@
 var ScheduleModel = require('../libs/mongoose').ScheduleModel;
 var TokenModel = require('../libs/mongoose').TokenModel;
+var mongoose = require('mongoose');
+var async = require('async');
 var log = require('../libs/log')(module);
 //routes
 module.exports = function (router, passport) {
@@ -46,7 +48,8 @@ module.exports = function (router, passport) {
 				title: req.body.title,
 				schedule: req.body.schedule,
 				isPrivate: req.body.isPrivate,
-				creator: creator
+				creator: creator,
+				lastEditTime: Date.now()
 			});
 
 			schedule.save(function (err) {
@@ -64,6 +67,73 @@ module.exports = function (router, passport) {
 					log.error('Internal error(%d): %s',res.statusCode,err.message);
 				}
 			});		
+		});
+	});
+
+	router.post('/sync', function (req, res) {
+		var ids = [];
+		var newSchedules = [];
+		for(var i in req.body) {
+			ids.push(mongoose.Types.ObjectId(req.body[i]._id));
+			newSchedules.push(req.body[i]);
+		}
+		var deleting = [];
+		var updating = [];
+		var answer = [];
+		return ScheduleModel.find({_id: { $in : ids }}, function (err, schedules) {
+			for(var i in schedules){
+				for(var j in req.body){
+					//equal schedule
+					if(schedules[i]._id === req.body[j]._id){
+						//removed by mobile client
+						if(req.body[j].isDeleted){
+							deleting.push(schedules[i]);
+							break;
+						}
+						if(req.body[j].lastEditTime < schedules[i].lastEditTime){
+							answer.push(schedules[i]);
+						}else{
+							schedules[i].title = req.body[j].title;
+							schedules[i].schedule = req.body[j].schedule;
+							schedules[i].isPrivate = req.body[j].isPrivate;
+							schedules[i].lastEditTime = req.body[j].lastEditTime;
+							updating.push(schedules[i]);
+							answer.push(schedules[i]);
+						}
+						break;
+					}
+				}
+			}
+
+			//magic removing array
+			async.eachSeries(deleting, function iterator (item, cb) {
+				async.setImmediate(function () {
+			    	callback(null, item.remove());
+			    });
+			}, function done () {
+				// magic updating
+				async.eachSeries(updating, function iterator (item, cb) {
+					async.setImmediate(function () {
+				    	callback(null, item.save());
+				    });
+				}, function done () {
+					// post new
+					async.eachSeries(newSchedules, function iterator (item, cb) {
+						async.setImmediate(function () {
+							var schedule = new ScheduleModel({
+								title: item.title,
+								schedule: item.schedule,
+								isPrivate: item.isPrivate,
+								creator: item.creator,
+								lastEditTime: Date.now()
+							});
+					    	callback(null, schedule.save());
+					    });
+					}, function done () {
+						return res.json({answer:answer});
+					});
+				});
+			});
 		});
 	});
 
@@ -106,6 +176,8 @@ module.exports = function (router, passport) {
 					schedule.title = req.body.title;
 					schedule.schedule = req.body.schedule;
 					schedule.isPrivate = req.body.isPrivate;
+					schedule.lastEditTime = req.body.lastEditTime;
+					schedules.lastEditTime = Date.now();
 
 					return schedule.save(function (err) {
 						if (!err) {
