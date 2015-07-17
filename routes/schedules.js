@@ -107,13 +107,13 @@ module.exports = function (router, passport) {
 			}
 
 			for(var i in deleting){
-				deleting[i].remove();
+				deleting[i].remove().exec();
 			}
 			for(var i in updating){
-				updating[i].save();
+				updating[i].save().exec();
 			}
+			var saveCounter = 0
 			for(var i in newSchedules){
-
 				var schedule = new ScheduleModel({
 					title: newSchedules[i].title,
 					schedule: newSchedules[i].schedule,
@@ -122,9 +122,14 @@ module.exports = function (router, passport) {
 					lastEditTime: Date.now()
 				});
 				answer.push(schedule);
-				schedule.save();
+				schedule.save(function (err) {
+					saveCounter++;
+					if(saveCounter==newSchedules.length){
+						return res.json({answer: answer});
+					}
+				});
 			}
-			return res.json({answer: answer});
+			
 			/*
 			//magic removing array
 			async.eachSeries(deleting, function iterator (item, callback) {
