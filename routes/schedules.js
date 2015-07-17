@@ -104,7 +104,6 @@ module.exports = function (router, passport) {
 					}
 				}
 			}
-
 			//magic removing array
 			async.eachSeries(deleting, function iterator (item, cb) {
 				async.setImmediate(function () {

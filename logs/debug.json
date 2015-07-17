@@ -1291,3 +1291,11 @@
 {"level":"info","message":"Connected to DB!","timestamp":"2015-07-17T12:11:17.134Z"}
 {"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-17T12:22:28.649Z"}
 {"level":"info","message":"Connected to DB!","timestamp":"2015-07-17T12:22:29.703Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-17T12:40:59.051Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-17T12:41:00.128Z"}
+{"level":"error","message":"Internal error(500): path must be absolute or specify root to res.sendFile","timestamp":"2015-07-17T12:41:11.324Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-17T12:43:21.189Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-17T12:43:22.227Z"}
+{"level":"error","message":"Internal error(404): ENOENT, stat 'd:\\heroku\\DailyTimer\\routes..\\logs\\debug.json'","timestamp":"2015-07-17T12:43:24.709Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-17T12:44:04.773Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-17T12:44:05.773Z"}

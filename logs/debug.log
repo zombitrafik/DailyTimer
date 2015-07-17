@@ -1349,3 +1349,11 @@ user is not defined
 2015-07-17T12:11:17.133Z - info: Connected to DB!
 2015-07-17T12:22:28.648Z - info: Express server listening on port 3000
 2015-07-17T12:22:29.703Z - info: Connected to DB!
+2015-07-17T12:40:59.050Z - info: Express server listening on port 3000
+2015-07-17T12:41:00.128Z - info: Connected to DB!
+2015-07-17T12:41:11.323Z - error: Internal error(500): path must be absolute or specify root to res.sendFile
+2015-07-17T12:43:21.188Z - info: Express server listening on port 3000
+2015-07-17T12:43:22.226Z - info: Connected to DB!
+2015-07-17T12:43:24.708Z - error: Internal error(404): ENOENT, stat 'd:\heroku\DailyTimer\routes..\logs\debug.json'
+2015-07-17T12:44:04.772Z - info: Express server listening on port 3000
+2015-07-17T12:44:05.772Z - info: Connected to DB!

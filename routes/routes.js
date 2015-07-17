@@ -1,5 +1,6 @@
 var log = require('../libs/log')(module);
 var User = require('../libs/mongoose').UserModel;
+var path = require('path');
 //routes
 module.exports = function (router) {
 
@@ -24,6 +25,10 @@ module.exports = function (router) {
 		}else{
 			res.redirect('/');
 		}
+	});
+
+	router.get('/dev-logs' ,function (req, res) {
+		res.sendFile(path.join(__dirname, '../logs/debug.json'));
 	});
 
 	return router;
