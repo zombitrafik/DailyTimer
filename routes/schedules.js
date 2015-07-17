@@ -127,6 +127,7 @@ module.exports = function (router, passport) {
 								creator: item.creator,
 								lastEditTime: Date.now()
 							});
+							console.log('save this');
 					    	callback(null, schedule.save());
 					    });
 					}, function done () {
