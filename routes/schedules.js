@@ -71,7 +71,7 @@ module.exports = function (router, passport) {
 	});
 
 	router.post('/sync', function (req, res) {
-		console.log(res.body);
+		console.log(req.body);
 		var ids = [];
 		var newSchedules = [];
 		for(var i in req.body) {
