@@ -106,19 +106,19 @@ module.exports = function (router, passport) {
 				}
 			}
 			//magic removing array
-			async.eachSeries(deleting, function iterator (item, cb) {
+			async.eachSeries(deleting, function iterator (item, callback) {
 				async.setImmediate(function () {
 			    	callback(null, item.remove());
 			    });
 			}, function done () {
 				// magic updating
-				async.eachSeries(updating, function iterator (item, cb) {
+				async.eachSeries(updating, function iterator (item, callback) {
 					async.setImmediate(function () {
 				    	callback(null, item.save());
 				    });
 				}, function done () {
 					// post new
-					async.eachSeries(newSchedules, function iterator (item, cb) {
+					async.eachSeries(newSchedules, function iterator (item, callback) {
 						async.setImmediate(function () {
 							var schedule = new ScheduleModel({
 								title: item.title,
