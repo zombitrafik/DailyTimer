@@ -105,6 +105,27 @@ module.exports = function (router, passport) {
 					}
 				}
 			}
+
+			for(var i in deleting){
+				deleting[i].remove();
+			}
+			for(var i in updating){
+				updating[i].save();
+			}
+			for(var i in newSchedules){
+
+				var schedule = new ScheduleModel({
+					title: newSchedules[i].title,
+					schedule: newSchedules[i].schedule,
+					isPrivate: newSchedules[i].isPrivate,
+					creator: newSchedules[i].creator,
+					lastEditTime: Date.now()
+				});
+				answer.push(schedule);
+				schedule.save();
+			}
+			return res.json({answer: answer});
+			/*
 			//magic removing array
 			async.eachSeries(deleting, function iterator (item, callback) {
 				async.setImmediate(function () {
@@ -134,6 +155,9 @@ module.exports = function (router, passport) {
 					});
 				});
 			});
+
+*/
+
 		});
 	});
 
