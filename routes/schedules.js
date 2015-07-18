@@ -174,7 +174,9 @@ module.exports = function (router, passport) {
 						if(err){
 							return res.json({erorr: err});
 						}else{
-							return res.json(body);
+							var result = JSON.parse(body);
+							console.log("status " + result.status);
+							return res.json(result);
 						}
 					});
 				}
