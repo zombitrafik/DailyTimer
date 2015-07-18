@@ -78,6 +78,7 @@ module.exports = function (router, passport) {
 	});
 
 	router.post('/sync', function (req, res) {
+		console.log(req.body);
 		var access_token = req.query.access_token;
 		var ids = [];
 		var newSchedules = [];
