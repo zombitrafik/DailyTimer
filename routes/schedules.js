@@ -59,6 +59,8 @@ module.exports = function (router, passport) {
 				lastEditTime: Date.now()
 			});
 
+			console.log(schedule);
+
 			schedule.save(function (err) {
 				if (!err) {
 					log.info("schedule created");
