@@ -93,10 +93,11 @@ app.controller('Ctrl', function ($scope, $http) {
 
 	$scope.Sync = function () {
 		var body = [
-			{_id: '55a15c7cc089cb8c08ece0f8'},
-			{_id: 2}
+			{_id: '55aa33c3da4bed1100e1fa23', isDeleted: true},
+		/*	{_id: '55aa2ef8da4bed1100e1fa1e', isDeleted: true}, */
+			{_id: '', title: 'mobile title', schedule: [], isPrivate: false, isDeleted: false }
 		];
-		$http.post('http://localhost:3000/api/sync?access_token=szBQazrKrezMzOO6P9b3vkCdsnmQp2rJ', body).success(function (response) {
+		$http.post('http://localhost:3000/api/sync?access_token=CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG', body).success(function (response) {
 			console.log(response);
 		});
 	};

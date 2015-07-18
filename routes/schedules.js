@@ -2,7 +2,14 @@ var ScheduleModel = require('../libs/mongoose').ScheduleModel;
 var TokenModel = require('../libs/mongoose').TokenModel;
 var mongoose = require('mongoose');
 var async = require('async');
+var request = require('request');
+
+var config = require('../libs/config');
+var apiUrl = config.get('apiUrl');
+var devApiUrl = config.get('devApiUrl');
+
 var log = require('../libs/log')(module);
+
 //routes
 module.exports = function (router, passport) {
 
@@ -71,6 +78,111 @@ module.exports = function (router, passport) {
 	});
 
 	router.post('/sync', function (req, res) {
+		var access_token = req.query.access_token;
+		var ids = [];
+		var newSchedules = [];
+		for(var i in req.body) {
+			if(req.body[i]._id != ''){
+				ids.push(mongoose.Types.ObjectId(req.body[i]._id));
+			}else{
+				newSchedules.push(req.body[i]);
+			}
+		}
+		var deleting = [];
+		var updating = [];
+
+		return ScheduleModel.find({_id: { $in : ids }}, function (err, schedules) {
+			for(var i in schedules){
+				for(var j in req.body){
+					//equal schedule
+					if(schedules[i]._id == req.body[j]._id){
+						//removed by mobile client
+						if(req.body[j].isDeleted){
+							deleting.push(schedules[i]);
+							break;
+						}
+						if(req.body[j].lastEditTime > schedules[i].lastEditTime){
+							schedules[i].title = req.body[j].title;
+							schedules[i].schedule = req.body[j].schedule;
+							schedules[i].isPrivate = req.body[j].isPrivate;
+							schedules[i].lastEditTime = req.body[j].lastEditTime;
+							updating.push(schedules[i]);
+						}
+						break;
+					}
+				}
+			}
+
+			// deleting
+			var removing = function(schedule, cb){
+				request.del(apiUrl + '/schedules/' + schedule._id + '?access_token='+access_token, function(err,response,body){
+					if ( err){
+						cb(err);
+					} else {
+						cb(null, body);
+					}
+				});
+			}
+
+			// updating
+			var update = function (schedule, cb) {
+				request({ url: apiUrl + '/schedules/' + schedule._id + '?access_token='+access_token, method: 'PUT', json: schedule }, function (err, response, body) {
+					if ( err){
+						cb(err);
+					} else {
+						cb(null, body);
+					}
+				})
+			}
+
+			// newSchedules
+			var createSchedules = function (schedule, cb) {
+				request({ url: apiUrl + '/schedules?access_token='+access_token, method: 'POST', json: true, body: schedule }, function (err, response, body) {
+					if ( err){
+						cb(err);
+					} else {
+						cb(null, body);
+					}
+				})
+			}
+
+			var sync = [
+				{items: deleting, method: removing},
+				{items: updating, method: update},
+				{items: newSchedules, method: createSchedules}
+			]
+
+			var parseSync = function (obj, cb) {
+				async.map(obj.items, obj.method, function (err, response, body) {
+					if(err){
+						cb(err);
+					}else{
+						cb(null, body);
+					}
+				});
+			}
+
+			async.map(sync, parseSync, function (err, results) {
+				if ( err){
+					return res.json({erorr: err});
+				} else {
+					request.get(apiUrl + '/schedules?access_token='+access_token, function (err, response, body) {
+						if(err){
+							return res.json({erorr: err});
+						}else{
+							return res.json(body);
+						}
+					});
+				}
+			})
+			
+			// newSchedules
+
+
+		});
+	});
+/*
+	router.post('/sync', function (req, res) {
 		console.log(req.body);
 		var ids = [];
 		var newSchedules = [];
@@ -130,18 +242,18 @@ module.exports = function (router, passport) {
 				});
 			}
 			
-			/*
+
 			//magic removing array
 			async.eachSeries(deleting, function iterator (item, callback) {
 				async.setImmediate(function () {
-			    	callback(null, item.remove());
-			    });
+					callback(null, item.remove());
+				});
 			}, function done () {
 				// magic updating
 				async.eachSeries(updating, function iterator (item, callback) {
 					async.setImmediate(function () {
-				    	callback(null, item.save());
-				    });
+						callback(null, item.save());
+					});
 				}, function done () {
 					// post new
 					async.eachSeries(newSchedules, function iterator (item, callback) {
@@ -153,18 +265,20 @@ module.exports = function (router, passport) {
 								creator: item.creator,
 								lastEditTime: Date.now()
 							});
-					    	callback(null, schedule.save().exec());
-					    });
+							callback(null, schedule.save().exec());
+						});
 					}, function done () {
 						return res.json({answer:answer});
 					});
 				});
 			});
 
-*/
+
 
 		});
 	});
+
+*/
 
 	router.get('/schedules/:id', function(req, res) {
 		return ScheduleModel.findById(req.params.id, function (err, schedule) {

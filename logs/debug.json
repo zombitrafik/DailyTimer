@@ -1299,3 +1299,77 @@
 {"level":"error","message":"Internal error(404): ENOENT, stat 'd:\\heroku\\DailyTimer\\routes..\\logs\\debug.json'","timestamp":"2015-07-17T12:43:24.709Z"}
 {"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-17T12:44:04.773Z"}
 {"level":"info","message":"Connected to DB!","timestamp":"2015-07-17T12:44:05.773Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T10:31:26.806Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T10:31:28.377Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:33:33.844Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T10:35:25.490Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T10:35:26.988Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:35:34.031Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T10:36:16.879Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T10:36:18.327Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:36:22.170Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T10:36:53.252Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T10:36:54.706Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:36:57.859Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T10:37:24.120Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T10:37:27.009Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:37:30.468Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T10:37:40.938Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T10:37:43.247Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:37:47.380Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T10:38:50.526Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T10:38:51.970Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T10:40:25.333Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T10:40:27.568Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:40:31.781Z"}
+{"level":"info","message":"/schedules/55aa2bceda4bed1100e1fa13 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:40:32.501Z"}
+{"level":"info","message":"schedule removed","timestamp":"2015-07-18T10:40:33.431Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:42:09.534Z"}
+{"level":"info","message":"/schedules/55aa2d47da4bed1100e1fa16 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:42:10.242Z"}
+{"level":"info","message":"/schedules/55aa2d5ada4bed1100e1fa18 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:42:10.252Z"}
+{"level":"info","message":"schedule removed","timestamp":"2015-07-18T10:42:11.182Z"}
+{"level":"info","message":"schedule removed","timestamp":"2015-07-18T10:42:11.192Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T10:47:52.079Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T10:47:53.600Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:48:59.500Z"}
+{"level":"info","message":"/schedules/55aa2ee7da4bed1100e1fa1b access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:49:00.240Z"}
+{"level":"info","message":"/schedules/55aa2ef8da4bed1100e1fa1e access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T10:49:00.250Z"}
+{"level":"info","message":"schedule removed","timestamp":"2015-07-18T10:49:01.190Z"}
+{"level":"info","message":"schedule removed","timestamp":"2015-07-18T10:49:01.190Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T11:05:50.706Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T11:05:52.208Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:06:30.243Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:06:30.975Z"}
+{"level":"info","message":"/schedules/55aa331dda4bed1100e1fa21 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:06:30.981Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-18T11:06:31.698Z"}
+{"level":"info","message":"schedule removed","timestamp":"2015-07-18T11:06:31.947Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T11:08:32.884Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T11:08:34.473Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:09:17.169Z"}
+{"level":"info","message":"/schedules/55aa33c3da4bed1100e1fa23 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:09:18.128Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:09:18.150Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-18T11:09:18.865Z"}
+{"level":"info","message":"schedule removed","timestamp":"2015-07-18T11:09:19.081Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T11:10:51.391Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T11:10:52.899Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:10:56.618Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:10:57.341Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-18T11:10:58.056Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T11:11:35.120Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T11:11:36.552Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:11:48.628Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:11:49.351Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-18T11:11:50.804Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:11:51.554Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T11:14:11.115Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T11:14:12.615Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:14:25.791Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:14:26.504Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-18T11:14:27.219Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:14:27.970Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T11:14:54.114Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T11:14:55.548Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:15:07.688Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:15:08.450Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-18T11:15:09.157Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:15:09.882Z"}

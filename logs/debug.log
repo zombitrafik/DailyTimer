@@ -1357,3 +1357,77 @@ user is not defined
 2015-07-17T12:43:24.708Z - error: Internal error(404): ENOENT, stat 'd:\heroku\DailyTimer\routes..\logs\debug.json'
 2015-07-17T12:44:04.772Z - info: Express server listening on port 3000
 2015-07-17T12:44:05.772Z - info: Connected to DB!
+2015-07-18T10:31:26.805Z - info: Express server listening on port 3000
+2015-07-18T10:31:28.376Z - info: Connected to DB!
+2015-07-18T10:33:33.844Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:35:25.480Z - info: Express server listening on port 3000
+2015-07-18T10:35:26.988Z - info: Connected to DB!
+2015-07-18T10:35:34.031Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:36:16.879Z - info: Express server listening on port 3000
+2015-07-18T10:36:18.327Z - info: Connected to DB!
+2015-07-18T10:36:22.170Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:36:53.252Z - info: Express server listening on port 3000
+2015-07-18T10:36:54.706Z - info: Connected to DB!
+2015-07-18T10:36:57.859Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:37:24.120Z - info: Express server listening on port 3000
+2015-07-18T10:37:27.008Z - info: Connected to DB!
+2015-07-18T10:37:30.468Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:37:40.938Z - info: Express server listening on port 3000
+2015-07-18T10:37:43.246Z - info: Connected to DB!
+2015-07-18T10:37:47.380Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:38:50.526Z - info: Express server listening on port 3000
+2015-07-18T10:38:51.970Z - info: Connected to DB!
+2015-07-18T10:40:25.333Z - info: Express server listening on port 3000
+2015-07-18T10:40:27.568Z - info: Connected to DB!
+2015-07-18T10:40:31.781Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:40:32.501Z - info: /schedules/55aa2bceda4bed1100e1fa13 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:40:33.431Z - info: schedule removed
+2015-07-18T10:42:09.533Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:42:10.242Z - info: /schedules/55aa2d47da4bed1100e1fa16 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:42:10.252Z - info: /schedules/55aa2d5ada4bed1100e1fa18 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:42:11.182Z - info: schedule removed
+2015-07-18T10:42:11.192Z - info: schedule removed
+2015-07-18T10:47:52.079Z - info: Express server listening on port 3000
+2015-07-18T10:47:53.599Z - info: Connected to DB!
+2015-07-18T10:48:59.500Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:49:00.240Z - info: /schedules/55aa2ee7da4bed1100e1fa1b access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:49:00.250Z - info: /schedules/55aa2ef8da4bed1100e1fa1e access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T10:49:01.190Z - info: schedule removed
+2015-07-18T10:49:01.190Z - info: schedule removed
+2015-07-18T11:05:50.705Z - info: Express server listening on port 3000
+2015-07-18T11:05:52.208Z - info: Connected to DB!
+2015-07-18T11:06:30.243Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:06:30.975Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:06:30.980Z - info: /schedules/55aa331dda4bed1100e1fa21 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:06:31.698Z - info: schedule created
+2015-07-18T11:06:31.947Z - info: schedule removed
+2015-07-18T11:08:32.883Z - info: Express server listening on port 3000
+2015-07-18T11:08:34.472Z - info: Connected to DB!
+2015-07-18T11:09:17.169Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:09:18.128Z - info: /schedules/55aa33c3da4bed1100e1fa23 access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:09:18.149Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:09:18.864Z - info: schedule created
+2015-07-18T11:09:19.081Z - info: schedule removed
+2015-07-18T11:10:51.389Z - info: Express server listening on port 3000
+2015-07-18T11:10:52.899Z - info: Connected to DB!
+2015-07-18T11:10:56.618Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:10:57.341Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:10:58.056Z - info: schedule created
+2015-07-18T11:11:35.119Z - info: Express server listening on port 3000
+2015-07-18T11:11:36.552Z - info: Connected to DB!
+2015-07-18T11:11:48.627Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:11:49.350Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:11:50.804Z - info: schedule created
+2015-07-18T11:11:51.553Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:14:11.114Z - info: Express server listening on port 3000
+2015-07-18T11:14:12.614Z - info: Connected to DB!
+2015-07-18T11:14:25.791Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:14:26.504Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:14:27.219Z - info: schedule created
+2015-07-18T11:14:27.970Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:14:54.113Z - info: Express server listening on port 3000
+2015-07-18T11:14:55.548Z - info: Connected to DB!
+2015-07-18T11:15:07.687Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:15:08.450Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T11:15:09.157Z - info: schedule created
+2015-07-18T11:15:09.882Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG

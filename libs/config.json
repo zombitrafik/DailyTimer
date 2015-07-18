@@ -11,5 +11,7 @@
     	"clientID" : "221234006857-v9q7udkftic58sicm9a3ktldicdbh82p.apps.googleusercontent.com",
     	"clientSecret" : "_pysN9yPabCr2dXbwbAJnWIs",
     	"callbackURL" : "https://sleepy-river-1523.herokuapp.com/auth/google/callback"
-    }
+    },
+    "apiUrl" : "https://sleepy-river-1523.herokuapp.com/api",
+    "devApiUrl" : "http://localhost:3000/api"
 }
