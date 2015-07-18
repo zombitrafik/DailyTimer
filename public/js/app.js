@@ -97,7 +97,7 @@ app.controller('Ctrl', function ($scope, $http) {
 		/*	{_id: '55aa2ef8da4bed1100e1fa1e', isDeleted: true}, */
 			{_id: '', title: 'mobile title', schedule: [], isPrivate: false, isDeleted: false }
 		];
-		$http.post('https://sleepy-river-1523.herokuapp.com/api/sync?access_token=CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG', body).success(function (response) {
+		$http.post('http://localhost:3000/api/sync?access_token=CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG', body).success(function (response) {
 			console.log(response);
 		});
 	};

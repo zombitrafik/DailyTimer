@@ -119,7 +119,7 @@ module.exports = function (router, passport) {
 
 			// deleting
 			var removing = function(schedule, cb){
-				request.del(apiUrl + '/schedules/' + schedule._id + '?access_token='+access_token, function(err,response,body){
+				request.del(devApiUrl + '/schedules/' + schedule._id + '?access_token='+access_token, function(err,response,body){
 					if ( err){
 						cb(err);
 					} else {
@@ -130,7 +130,7 @@ module.exports = function (router, passport) {
 
 			// updating
 			var update = function (schedule, cb) {
-				request({ url: apiUrl + '/schedules/' + schedule._id + '?access_token='+access_token, method: 'PUT', json: schedule }, function (err, response, body) {
+				request({ url: devApiUrl + '/schedules/' + schedule._id + '?access_token='+access_token, method: 'PUT', json: schedule }, function (err, response, body) {
 					if ( err){
 						cb(err);
 					} else {
@@ -141,7 +141,7 @@ module.exports = function (router, passport) {
 
 			// newSchedules
 			var createSchedules = function (schedule, cb) {
-				request({ url: apiUrl + '/schedules?access_token='+access_token, method: 'POST', json: true, body: schedule }, function (err, response, body) {
+				request({ url: devApiUrl + '/schedules?access_token='+access_token, method: 'POST', json: true, body: schedule }, function (err, response, body) {
 					if ( err){
 						cb(err);
 					} else {
@@ -170,7 +170,7 @@ module.exports = function (router, passport) {
 				if ( err){
 					return res.json({erorr: err});
 				} else {
-					request.get(apiUrl + '/schedules?access_token='+access_token, function (err, response, body) {
+					request.get(devApiUrl + '/schedules?access_token='+access_token, function (err, response, body) {
 						if(err){
 							return res.json({erorr: err});
 						}else{
@@ -179,7 +179,6 @@ module.exports = function (router, passport) {
 					});
 				}
 			})
-			
 
 		});
 	});

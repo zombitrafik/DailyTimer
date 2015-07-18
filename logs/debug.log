@@ -1431,3 +1431,9 @@ user is not defined
 2015-07-18T11:15:08.450Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
 2015-07-18T11:15:09.157Z - info: schedule created
 2015-07-18T11:15:09.882Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T13:53:41.145Z - info: Express server listening on port 3000
+2015-07-18T13:53:42.771Z - info: Connected to DB!
+2015-07-18T13:53:58.276Z - info: /sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T13:53:59.484Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG
+2015-07-18T13:54:00.250Z - info: schedule created
+2015-07-18T13:54:01.377Z - info: /schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG

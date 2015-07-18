@@ -1373,3 +1373,9 @@
 {"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:15:08.450Z"}
 {"level":"info","message":"schedule created","timestamp":"2015-07-18T11:15:09.157Z"}
 {"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T11:15:09.882Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-18T13:53:41.146Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-18T13:53:42.771Z"}
+{"level":"info","message":"/sync access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T13:53:58.277Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T13:53:59.485Z"}
+{"level":"info","message":"schedule created","timestamp":"2015-07-18T13:54:00.250Z"}
+{"level":"info","message":"/schedules access_token CTu7R8kTiQYYaXPICbjXGPDUefC3sIcG","timestamp":"2015-07-18T13:54:01.378Z"}
