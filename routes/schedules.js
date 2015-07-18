@@ -86,6 +86,7 @@ module.exports = function (router, passport) {
 			if(req.body[i]._id != ''){
 				ids.push(mongoose.Types.ObjectId(req.body[i]._id));
 			}else{
+				console.log('new schedule');
 				newSchedules.push(req.body[i]);
 			}
 		}
