@@ -225,7 +225,7 @@ module.exports = function (router, passport) {
 					schedule.schedule = req.body.schedule;
 					schedule.isPrivate = req.body.isPrivate;
 					schedule.lastEditTime = req.body.lastEditTime;
-					schedules.lastEditTime = Date.now();
+					schedule.lastEditTime = Date.now();
 
 					return schedule.save(function (err) {
 						if (!err) {
