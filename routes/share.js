@@ -27,7 +27,7 @@ module.exports = function (router) {
 				isPrivate: schedule.isPrivate,
 				title: schedule.title,
 				schedule: [],
-				accessCb: devApiUrl.replace('/api', '') +'/share/access/' + schedule._id
+				accessCb: apiUrl.replace('/api', '') +'/share/access/' + schedule._id
 			};
 			var items = schedule.getItems();
 			for(var i = 0; i < items.length; i++){
