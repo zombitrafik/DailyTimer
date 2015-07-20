@@ -38,7 +38,17 @@ module.exports = function (router) {
 					time: items[i].time
 				});
 			}
-			return res.render('share.ejs', {schedule: result});
+			var type = req.query.type || '';
+			switch (type.toUpperCase()){
+				case 'WEB':
+					return res.render('share.ejs', {schedule: result});
+				break;
+				case 'MOBILE':
+					return res.json({schedule: result}); 
+				break;
+				default: 
+					return res.json({schedule: result});
+			}
 		});
 
 	});
