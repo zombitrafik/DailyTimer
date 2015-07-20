@@ -44,6 +44,8 @@ var AppCtrl = angular.module('AppCtrl', [])
 			$http.get('https://sleepy-river-1523.herokuapp.com/api/schedules/'+$routeParams.id+'?access_token='+$scope.token).success(function (response) {
 				$scope.detailsSchedule = response.schedule;
 				$scope.isloading = false;
+
+				$scope.shareLink = window.location.origin + '/share/' + $scope.detailsSchedule._id;
 			});
 		};
 
@@ -67,7 +69,9 @@ var AppCtrl = angular.module('AppCtrl', [])
 	.controller('EditCtrl', ['$scope', '$http', '$routeParams', '$location', function ($scope, $http, $routeParams, $location) {
 		
 		$scope.isloading = true;
-
+		$scope.schedule = {
+			isPrivate: false
+		}
 		function Item(tid, config) {
 			this.tid = tid;
 			if(config!=null) {
@@ -134,11 +138,18 @@ var AppCtrl = angular.module('AppCtrl', [])
 						onColor:'success',
 						offColor:'danger',
 						size: 'small',
-						state: true
+						state: !$scope.schedule.isPrivate
+					}).on('switchChange.bootstrapSwitch', function(event, state) {
+						$scope.schedule.isPrivate = !state;
 					});
+
 				}, 0);
 			});
 		};
+
+		$scope.logisprivate = function () {
+			console.log($scope.schedule.isPrivate);
+		}
 
 		$scope.Save = function () {
 			var s = $scope.schedule.schedule;
@@ -149,9 +160,11 @@ var AppCtrl = angular.module('AppCtrl', [])
 			if($scope.schedule.schedule.length == 0) return; // empty items
 
 			var body = $scope.schedule;
+			console.log(body);
 			$scope.isloading = true;
 			$http.put('https://sleepy-river-1523.herokuapp.com/api/schedules/' + $routeParams.id + '?access_token='+$scope.token, body).success(function (response) {
 				$location.url('/schedules');
+				console.log(response);
 			});
 		};
 
@@ -159,6 +172,9 @@ var AppCtrl = angular.module('AppCtrl', [])
 			$scope.loadSchedule();
 		};
 		init();
+	}])
+	.controller('ShareCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+		
 	}])
 	.controller('CreateCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
 		

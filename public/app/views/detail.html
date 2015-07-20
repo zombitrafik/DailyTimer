@@ -4,7 +4,8 @@
 	</ul>
 	<div ng-if="!isloading">
 		<h2 class="text-center">Detail info</h2>
-		<h4 class="text-center text-info">{{detailsSchedule.title}}</h4>
+		<h4 class="text-center text-info" ng-bind="detailsSchedule.title"></h4>
+		<h5 class="text-default text-center"><b>Share link:</b> <span ng-bind="shareLink" class="text-success"></span></h5>
 		<div class="text-center">
 			<button ng-click="editSchedule(detailsSchedule._id)" class="btn btn-xs btn-warning">EDIT</button>
 			<button ng-click="deleteSchedule(detailsSchedule._id)" class="btn btn-xs btn-danger">DELETE</button>	

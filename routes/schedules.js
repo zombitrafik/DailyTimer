@@ -220,7 +220,7 @@ module.exports = function (router, passport) {
 			return TokenModel.findOne({value : req.query.access_token}).populate('user').exec(function (err, token) {
 				if(schedule.creator==token.user._id){
 					
-
+					console.log(req.body.isPrivate);
 					schedule.title = req.body.title;
 					schedule.schedule = req.body.schedule;
 					schedule.isPrivate = req.body.isPrivate;

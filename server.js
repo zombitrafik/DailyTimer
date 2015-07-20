@@ -21,6 +21,8 @@ var AuthR = express.Router();
 var Auth = require('./routes/auth')(AuthR, passport);
 var SchedulesR = express.Router();
 var Schedules = require('./routes/schedules')(SchedulesR, passport);
+var ShareR = express.Router();
+var Share = require('./routes/share')(ShareR);
 
 var app = express();
 
@@ -49,6 +51,7 @@ app.set('port', process.env.PORT || config.get('port'));
 app.use(Routes);
 app.use('/auth', Auth);
 app.use('/api', Schedules);
+app.use('/share', Share);
 
 //Erorr hanlers
 app.use(function(req, res, next){

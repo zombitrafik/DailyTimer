@@ -97,6 +97,10 @@ Schedule.statics.getById = function (id, cb) {
 	return this.findById(id).exec(cb);	
 };
 
+Schedule.methods.getItems = function () {
+	return this.schedule;
+};
+
 var ScheduleModel = mongoose.model('Schedule', Schedule);
 
 module.exports.ScheduleModel = ScheduleModel;

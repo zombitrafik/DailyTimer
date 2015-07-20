@@ -20,6 +20,10 @@ var app = angular.module('app', [
 			templateUrl: 'app/views/detail.html',
 			controller: 'DetailCtrl'
 		})
+		.when('/share', {
+			templateUrl: 'app/views/share.html',
+			controller: 'ShareCtrl'
+		})
 		.otherwise({redirectTo: '/schedules'});
 
 		$locationProvider.html5Mode({enabled: true, requireBase: false});
