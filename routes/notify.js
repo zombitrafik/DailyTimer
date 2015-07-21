@@ -36,7 +36,8 @@ module.exports = function (router) {
 				config.get('vk:methods:post_schedule'),
 				{
 					user_id: profile_id,
-					schedule: "test message post"
+					schedule: "test message post",
+					client_secret: config.get('vk:clientSecret');
 				},
 				access_token,
 				//cb
