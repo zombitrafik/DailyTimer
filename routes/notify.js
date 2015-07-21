@@ -54,16 +54,17 @@ module.exports = function (router) {
 		}
 	});
 
-	router.get('/setStatus/:status', function (req, res) {
+	router.get('/setStatus/:text', function (req, res) {
 		if(req.user){
 			var access_token = req.user.vk.token;
 			var profile_id = req.user.vk.id;
-			var status = req.params.status;
+			var text = req.params.text;
+			console.log('text ' + text);
 			vkapi.request(
 				config.get('vk:methods:set_status'),
 				{
 					group_id: profile_id,
-					text: status
+					text: text
 				},
 				access_token,
 				//cb

@@ -188,7 +188,7 @@ var AppCtrl = angular.module('AppCtrl', [])
 		};
 
 		$scope.setStatus = function () {
-			$http.get('https://sleepy-river-1523.herokuapp.com/notify/setStatus/'+$scope.status).success(function (response) {
+			$http.get('https://sleepy-river-1523.herokuapp.com/notify/setStatus/'+$scope.text).success(function (response) {
 				console.log(response);
 			});
 		};
