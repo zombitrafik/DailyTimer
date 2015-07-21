@@ -65,11 +65,30 @@ module.exports = function (router, passport) {
 		});
 	});
 
+	// VK //
+
+	router.get('/vk', passport.authenticate('vkontakte', { scope: ['friends'], display: 'page' }));
+	router.get('/vk/callback', passport.authenticate('vkontakte', {
+		successRedirect: '/auth/profile',
+		failureRedirect: '/'
+	}));
+	router.get('/connect/vk', passport.authorize('vkontakte', { scope: ['friends'], display: 'page' }));
+	router.get('/unlink/vk', function (req, res) {
+		var user = req.user;
+		user.vk.token = null;
+		user.save(function (err) {
+			if(err)
+				throw err;
+			res.redirect('/auth/profile');
+		});
+	});
+
 	// GOOGLE //
 	router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 	router.get('/google/callback',
-		passport.authenticate('google', { successRedirect: '/auth/profile',
-										  failureRedirect: '/'
+		passport.authenticate('google', { 
+			successRedirect: '/auth/profile',
+			failureRedirect: '/'
 	}));
 	router.get('/connect/google', passport.authorize('google', { scope: ['profile', 'email']}));
 	

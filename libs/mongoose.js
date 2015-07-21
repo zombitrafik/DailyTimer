@@ -28,6 +28,12 @@ var User = new Schema({
 		email: String,
 		name: String
 	},
+	vk: {
+		id: String,
+		token: String,
+		email: String,
+		name: String
+	},
 	token: {
 		type: Schema.Types.ObjectId,
 		ref: 'Token',

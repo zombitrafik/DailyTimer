@@ -1,5 +1,6 @@
 var LocalStrategy = require('passport-local').Strategy;
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+var VKontakteStrategy = require('passport-vkontakte').Strategy;
 var BearerStrategy = require('passport-http-bearer').Strategy;
 var log = require('./log')(module);
 var User = require('../libs/mongoose').UserModel;
@@ -134,6 +135,61 @@ module.exports = function (passport) {
 	    	});
 	    }
 
+	));
+
+	passport.use(new VKontakteStrategy({
+			clientID: config.get('vk:clientID'),
+	    	clientSecret: config.get('vk:clientSecret'),
+	    	callbackURL: config.get('vk:callbackURL'),
+	    	passReqToCallback: true
+		},
+		function(req, accessToken, refreshToken, profile, done) {
+	    	process.nextTick(function(){
+		    	if(!req.user){
+					User.findOne({'vk.id': profile.id}, function(err, user){
+		    			if(err)
+		    				return done(err);
+		    			if(user) {
+		    				if(!user.token){
+		    					user.vk.token = accessToken;
+		    					user.vk.name = profile.displayName || 'none';
+		    					user.vk.email = profile.emails[0].value || 'none';
+		    					user.save(function (err) {
+		    						if(err)
+		    							throw err;
+		    					});
+		    				}
+		    				return done(null, user);
+		    			}
+		    			else {
+		    				var newUser = new User();
+		    				newUser.vk.id = profile.id.toString();
+		    				newUser.vk.token = accessToken;
+		    				newUser.vk.name = profile.displayName || 'none';
+		    				newUser.vk.email = profile.emails[0].value || 'none';
+
+		    				newUser.save(function(err){
+		    					if(err)
+		    						throw err;
+		    					return done(null, newUser);
+		    				})
+		    			}
+		    		});	
+		    	}else{
+					var user = req.user;
+					user.vk.id = profile.id.toString();
+		  			user.vk.token = accessToken;
+		  			user.vk.name = profile.displayName || 'none';
+		  			user.vk.email = profile.emails[0].value || 'none';
+
+		  			user.save(function  (err) {
+		  				if(err)
+		  					throw err;
+		  				return done(null, user);
+		  			});
+				}
+	    	});
+	    }
 	));
 
 	passport.use(new BearerStrategy({}, 
