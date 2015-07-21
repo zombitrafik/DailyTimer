@@ -144,6 +144,8 @@ module.exports = function (passport) {
 	    	passReqToCallback: true
 		},
 		function(req, accessToken, refreshToken, profile, done) {
+			console.log('profile');
+			console.log(profile);
 	    	process.nextTick(function(){
 		    	if(!req.user){
 					User.findOne({'vk.id': profile.id}, function(err, user){
@@ -153,7 +155,7 @@ module.exports = function (passport) {
 		    				if(!user.token){
 		    					user.vk.token = accessToken;
 		    					user.vk.name = profile.displayName || 'none';
-		    					user.vk.email = profile.emails[0].value || 'none';
+		    					user.vk.email = /* profile.emails[0].value || */ 'none';
 		    					user.save(function (err) {
 		    						if(err)
 		    							throw err;
@@ -166,7 +168,7 @@ module.exports = function (passport) {
 		    				newUser.vk.id = profile.id.toString();
 		    				newUser.vk.token = accessToken;
 		    				newUser.vk.name = profile.displayName || 'none';
-		    				newUser.vk.email = profile.emails[0].value || 'none';
+		    				newUser.vk.email = /* profile.emails[0].value || */ 'none';
 
 		    				newUser.save(function(err){
 		    					if(err)
@@ -180,7 +182,7 @@ module.exports = function (passport) {
 					user.vk.id = profile.id.toString();
 		  			user.vk.token = accessToken;
 		  			user.vk.name = profile.displayName || 'none';
-		  			user.vk.email = profile.emails[0].value || 'none';
+		  			user.vk.email = /* profile.emails[0].value || */ 'none';
 
 		  			user.save(function  (err) {
 		  				if(err)
