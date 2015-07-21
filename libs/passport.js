@@ -144,8 +144,8 @@ module.exports = function (passport) {
 			passReqToCallback: true
 		},
 		function(req, accessToken, refreshToken, profile, done) {
-			console.log('req body');
-			console.log(req.body);
+			console.log('req query');
+			console.log(req.query);
 			console.log('profile');
 			console.log(profile);
 			process.nextTick(function(){
