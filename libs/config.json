@@ -19,7 +19,8 @@
         "apiUrl":"https://api.vk.com/method/",
         "methods": {
             "users_get":"users.get?",
-            "send_message":"messages.send?"
+            "send_message":"messages.send?",
+            "set_status":"status.set?"
         }
     },
     "apiUrl" : "https://sleepy-river-1523.herokuapp.com/api",
