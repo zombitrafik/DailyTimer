@@ -23,6 +23,8 @@ var SchedulesR = express.Router();
 var Schedules = require('./routes/schedules')(SchedulesR, passport);
 var ShareR = express.Router();
 var Share = require('./routes/share')(ShareR);
+var NotifyR = express.Router();
+var Notify = require('./routes/notify')(NotifyR);
 
 var app = express();
 
@@ -52,6 +54,7 @@ app.use(Routes);
 app.use('/auth', Auth);
 app.use('/api', Schedules);
 app.use('/share', Share);
+app.use('/notify', Notify);
 
 //Erorr hanlers
 app.use(function(req, res, next){

@@ -2,3 +2,35 @@
 {"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T08:06:36.328Z"}
 {"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T08:22:23.760Z"}
 {"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T08:22:24.896Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T09:59:33.921Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T09:59:35.024Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:00:43.483Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:00:45.510Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:02:45.636Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:02:47.953Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:03:13.128Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:03:15.154Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:14:47.393Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:14:48.472Z"}
+{"level":"error","message":"Internal error(500): object is not a function","timestamp":"2015-07-21T10:14:57.929Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:16:31.116Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:16:32.441Z"}
+{"level":"error","message":"Internal error(500): object is not a function","timestamp":"2015-07-21T10:16:44.773Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:17:17.266Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:17:18.235Z"}
+{"level":"error","message":"Internal error(500): object is not a function","timestamp":"2015-07-21T10:17:29.925Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:18:30.964Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:18:33.224Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:20:49.254Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:20:51.301Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:22:01.573Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:22:02.564Z"}
+{"level":"error","message":"Internal error(500): object is not a function","timestamp":"2015-07-21T10:22:18.523Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:28:21.111Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:28:22.288Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:28:51.169Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:28:52.253Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:30:38.360Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:30:39.567Z"}
+{"level":"info","message":"Express server listening on port 3000","timestamp":"2015-07-21T10:49:00.713Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2015-07-21T10:49:01.742Z"}

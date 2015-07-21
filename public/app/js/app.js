@@ -24,6 +24,10 @@ var app = angular.module('app', [
 			templateUrl: 'app/views/share.html',
 			controller: 'ShareCtrl'
 		})
+		.when('/notify', {
+			templateUrl: 'app/views/notify.html',
+			controller: 'NotifyCtrl'
+		})
 		.otherwise({redirectTo: '/schedules'});
 
 		$locationProvider.html5Mode({enabled: true, requireBase: false});

@@ -67,12 +67,12 @@ module.exports = function (router, passport) {
 
 	// VK //
 
-	router.get('/vk', passport.authenticate('vkontakte', { scope: ['friends', 'email'], display: 'page' }));
+	router.get('/vk', passport.authenticate('vkontakte', { scope: ['friends', 'email', 'offline', 'messages'], display: 'page' }));
 	router.get('/vk/callback', passport.authenticate('vkontakte', {
 		successRedirect: '/auth/profile',
 		failureRedirect: '/'
 	}));
-	router.get('/connect/vk', passport.authorize('vkontakte', { scope: ['friends', 'email'], display: 'page' }));
+	router.get('/connect/vk', passport.authorize('vkontakte', { scope: ['friends', 'email', 'offline', 'messages'], display: 'page' }));
 	router.get('/unlink/vk', function (req, res) {
 		var user = req.user;
 		user.vk.token = null;

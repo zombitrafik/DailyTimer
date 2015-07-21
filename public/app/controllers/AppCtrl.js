@@ -32,6 +32,10 @@ var AppCtrl = angular.module('AppCtrl', [])
 			$location.url('/detail?id='+id);
 		};
 
+		$scope.configNotify = function () {
+			$location.url('/notify');	
+		};
+
 		var init = function () {
 			$scope.loadSchedules();
 		};
@@ -174,7 +178,20 @@ var AppCtrl = angular.module('AppCtrl', [])
 		init();
 	}])
 	.controller('ShareCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
-		
+		// not implemented
+	}])
+	.controller('NotifyCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+		$scope.getUser = function () {
+			$http.get('https://sleepy-river-1523.herokuapp.com/notify/getUser').success(function (response) {
+				console.log(response);
+			});
+		};
+
+		$scope.sendMessage = function () {
+			$http.get('https://sleepy-river-1523.herokuapp.com/notify/sendMessage/'+$scope.message).success(function (response) {
+				console.log(response);
+			});
+		};
 	}])
 	.controller('CreateCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
 		

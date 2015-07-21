@@ -15,7 +15,12 @@
     "vk": {
         "clientID" : "5002560",
         "clientSecret" : "DxgrLEDQGv94uODwpY9d",
-        "callbackURL" : "https://sleepy-river-1523.herokuapp.com/auth/vk/callback"
+        "callbackURL" : "https://sleepy-river-1523.herokuapp.com/auth/vk/callback",
+        "apiUrl":"https://api.vk.com/method/",
+        "methods": {
+            "users_get":"users.get?",
+            "send_message":"messages.send?"
+        }
     },
     "apiUrl" : "https://sleepy-river-1523.herokuapp.com/api",
     "devApiUrl" : "http://localhost:3000/api"

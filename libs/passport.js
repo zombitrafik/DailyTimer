@@ -144,10 +144,6 @@ module.exports = function (passport) {
 			passReqToCallback: true
 		},
 		function(req, accessToken, refreshToken, profile, done) {
-			console.log('req query');
-			console.log(req.query);
-			console.log('profile');
-			console.log(profile);
 			process.nextTick(function(){
 				if(!req.user){
 					User.findOne({'vk.id': profile.id}, function(err, user){

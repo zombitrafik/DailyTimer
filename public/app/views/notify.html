@@ -1,0 +1,13 @@
+<div class="jumbotron">
+	<ul class="fa-ul" ng-if="isloading">
+		<li style="line-height: 40px;"><i class="fa-li fa fa-spinner fa-pulse fa-2x"></i>Loading ...</li>
+	</ul>
+	<div ng-if="!isloading">
+		<h2 class="text-center">Configure notifications</h2>
+		<button ng-click="getUser()">GET USER</button>
+		<input type="text" ng-model="message" class="form-control"><button ng-click="sendMessage()">SEND</button>
+		<div class="text-center">
+			<button onclick="window.history.back();" class="btn btn-xs btn-default">BACK</button>
+		</div>
+	</div>
+</div>
