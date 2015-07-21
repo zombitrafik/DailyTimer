@@ -188,6 +188,8 @@ var AppCtrl = angular.module('AppCtrl', [])
 		};
 
 		$scope.setStatus = function () {
+			console.log($scope.text);
+			console.log($scope.text.value);
 			$http.get('https://sleepy-river-1523.herokuapp.com/notify/setStatus/'+$scope.text).success(function (response) {
 				console.log(response);
 			});
