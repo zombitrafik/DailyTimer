@@ -13,8 +13,8 @@
     	"callbackURL" : "https://sleepy-river-1523.herokuapp.com/auth/google/callback"
     },
     "vk": {
-        "clientID" : "5002560",
-        "clientSecret" : "DxgrLEDQGv94uODwpY9d",
+        "clientID" : "5003599",
+        "clientSecret" : "2OxsAYtv3lLUtGgSV2eQ",
         "callbackURL" : "https://sleepy-river-1523.herokuapp.com/auth/vk/callback",
         "apiUrl":"https://api.vk.com/method/",
         "methods": {
