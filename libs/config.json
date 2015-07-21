@@ -20,7 +20,8 @@
         "methods": {
             "users_get":"users.get?",
             "send_message":"messages.send?",
-            "set_status":"status.set?"
+            "set_status":"status.set?",
+            "post_schedule":"execute.postSchedule?"
         }
     },
     "apiUrl" : "https://sleepy-river-1523.herokuapp.com/api",

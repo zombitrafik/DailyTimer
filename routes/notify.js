@@ -28,6 +28,31 @@ module.exports = function (router) {
 		}
 	});
 
+	router.get('/postSchedule', function (req, res) {
+		if(req.user){
+			var access_token = req.user.vk.token;
+			var profile_id = req.user.vk.id;
+			vkapi.request(
+				config.get('vk:methods:post_schedule'),
+				{
+					user_id: profile_id,
+					schedule: "test message post"
+				},
+				access_token,
+				//cb
+				function (error, response, body) {
+					if(error){
+						res.json({error: error.message})
+					}else{
+						res.json(body);
+					}
+				}
+			);
+		}else{
+			res.json({error: 'Unauthorized'});
+		}
+	});
+
 	router.get('/sendMessage/:message', function (req, res) {
 		if(req.user){
 			var access_token = req.user.vk.token;

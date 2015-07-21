@@ -184,7 +184,7 @@ var AppCtrl = angular.module('AppCtrl', [])
 		$scope.text = "123";
 
 		$scope.getUser = function () {
-			$http.get('https://sleepy-river-1523.herokuapp.com/notify/getUser').success(function (response) {
+			$http.get('https://sleepy-river-1523.herokuapp.com/notify/postSchedule').success(function (response) {
 				console.log(response);
 			});
 		};
