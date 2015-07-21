@@ -181,6 +181,8 @@ var AppCtrl = angular.module('AppCtrl', [])
 		// not implemented
 	}])
 	.controller('NotifyCtrl', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+		$scope.text = "123";
+
 		$scope.getUser = function () {
 			$http.get('https://sleepy-river-1523.herokuapp.com/notify/getUser').success(function (response) {
 				console.log(response);
@@ -189,7 +191,6 @@ var AppCtrl = angular.module('AppCtrl', [])
 
 		$scope.setStatus = function () {
 			console.log($scope.text);
-			console.log($scope.text.value);
 			$http.get('https://sleepy-river-1523.herokuapp.com/notify/setStatus/'+$scope.text).success(function (response) {
 				console.log(response);
 			});
