@@ -82,116 +82,118 @@ module.exports = function (passport) {
 	));
 
 	passport.use(new GoogleStrategy({
-	    clientID: config.get('google:clientID'),
-	    clientSecret: config.get('google:clientSecret'),
-	    callbackURL: config.get('google:callbackURL'),
-	    passReqToCallback: true
+		clientID: config.get('google:clientID'),
+		clientSecret: config.get('google:clientSecret'),
+		callbackURL: config.get('google:callbackURL'),
+		passReqToCallback: true
 	  },
 	  function(req, accessToken, refreshToken, profile, done) {
-	    	process.nextTick(function(){
-		    	if(!req.user){
+			process.nextTick(function(){
+				if(!req.user){
 					User.findOne({'google.id': profile.id}, function(err, user){
-		    			if(err)
-		    				return done(err);
-		    			if(user) {
-		    				if(!user.token){
-		    					user.google.token = accessToken;
-		    					user.google.name = profile.displayName;
-		    					user.google.email = profile.emails[0].value;
-		    					user.save(function (err) {
-		    						if(err)
-		    							throw err;
-		    					});
-		    				}
-		    				return done(null, user);
-		    			}
-		    			else {
-		    				var newUser = new User();
-		    				newUser.google.id = profile.id.toString();
-		    				newUser.google.token = accessToken;
-		    				newUser.google.name = profile.displayName;
-		    				newUser.google.email = profile.emails[0].value;
+						if(err)
+							return done(err);
+						if(user) {
+							if(!user.token){
+								user.google.token = accessToken;
+								user.google.name = profile.displayName;
+								user.google.email = profile.emails[0].value;
+								user.save(function (err) {
+									if(err)
+										throw err;
+								});
+							}
+							return done(null, user);
+						}
+						else {
+							var newUser = new User();
+							newUser.google.id = profile.id.toString();
+							newUser.google.token = accessToken;
+							newUser.google.name = profile.displayName;
+							newUser.google.email = profile.emails[0].value;
 
-		    				newUser.save(function(err){
-		    					if(err)
-		    						throw err;
-		    					return done(null, newUser);
-		    				})
-		    			}
-		    		});	
-		    	}else{
+							newUser.save(function(err){
+								if(err)
+									throw err;
+								return done(null, newUser);
+							})
+						}
+					});	
+				}else{
 					var user = req.user;
 					user.google.id = profile.id.toString();
-		  			user.google.token = accessToken;
-		  			user.google.name = profile.displayName;
-		  			user.google.email = profile.emails[0].value;
+					user.google.token = accessToken;
+					user.google.name = profile.displayName;
+					user.google.email = profile.emails[0].value;
 
-		  			user.save(function  (err) {
-		  				if(err)
-		  					throw err;
-		  				return done(null, user);
-		  			});
+					user.save(function  (err) {
+						if(err)
+							throw err;
+						return done(null, user);
+					});
 				}
-	    	});
-	    }
+			});
+		}
 
 	));
 
 	passport.use(new VKontakteStrategy({
 			clientID: config.get('vk:clientID'),
-	    	clientSecret: config.get('vk:clientSecret'),
-	    	callbackURL: config.get('vk:callbackURL'),
-	    	passReqToCallback: true
+			clientSecret: config.get('vk:clientSecret'),
+			callbackURL: config.get('vk:callbackURL'),
+			passReqToCallback: true
 		},
 		function(req, accessToken, refreshToken, profile, done) {
+			console.log('req body');
+			console.log(req.body);
 			console.log('profile');
 			console.log(profile);
-	    	process.nextTick(function(){
-		    	if(!req.user){
+			process.nextTick(function(){
+				if(!req.user){
 					User.findOne({'vk.id': profile.id}, function(err, user){
-		    			if(err)
-		    				return done(err);
-		    			if(user) {
-		    				if(!user.token){
-		    					user.vk.token = accessToken;
-		    					user.vk.name = profile.displayName || 'none';
-		    					user.vk.email = /* profile.emails[0].value || */ 'none';
-		    					user.save(function (err) {
-		    						if(err)
-		    							throw err;
-		    					});
-		    				}
-		    				return done(null, user);
-		    			}
-		    			else {
-		    				var newUser = new User();
-		    				newUser.vk.id = profile.id.toString();
-		    				newUser.vk.token = accessToken;
-		    				newUser.vk.name = profile.displayName || 'none';
-		    				newUser.vk.email = /* profile.emails[0].value || */ 'none';
+						if(err)
+							return done(err);
+						if(user) {
+							if(!user.token){
+								user.vk.token = accessToken;
+								user.vk.name = profile.displayName || 'none';
+								user.vk.email = /* profile.emails[0].value || */ 'none';
+								user.save(function (err) {
+									if(err)
+										throw err;
+								});
+							}
+							return done(null, user);
+						}
+						else {
+							var newUser = new User();
+							newUser.vk.id = profile.id.toString();
+							newUser.vk.token = accessToken;
+							newUser.vk.name = profile.displayName || 'none';
+							newUser.vk.email = /* profile.emails[0].value || */ 'none';
 
-		    				newUser.save(function(err){
-		    					if(err)
-		    						throw err;
-		    					return done(null, newUser);
-		    				})
-		    			}
-		    		});	
-		    	}else{
+							newUser.save(function(err){
+								if(err)
+									throw err;
+								return done(null, newUser);
+							})
+						}
+					});	
+				}else{
 					var user = req.user;
 					user.vk.id = profile.id.toString();
-		  			user.vk.token = accessToken;
-		  			user.vk.name = profile.displayName || 'none';
-		  			user.vk.email = /* profile.emails[0].value || */ 'none';
+					user.vk.token = accessToken;
+					user.vk.name = profile.displayName || 'none';
+					user.vk.email = /* profile.emails[0].value || */ 'none';
 
-		  			user.save(function  (err) {
-		  				if(err)
-		  					throw err;
-		  				return done(null, user);
-		  			});
+					user.save(function  (err) {
+						if(err)
+							throw err;
+						return done(null, user);
+					});
 				}
-	    	});
-	    }
+			});
+		}
 	));
 
 	passport.use(new BearerStrategy({}, 
