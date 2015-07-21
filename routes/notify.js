@@ -37,7 +37,7 @@ module.exports = function (router) {
 				{
 					user_id: profile_id,
 					schedule: "test message post",
-					client_secret: config.get('vk:clientSecret');
+					client_secret: config.get('vk:clientSecret')
 				},
 				access_token,
 				//cb
