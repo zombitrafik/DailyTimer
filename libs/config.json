@@ -10,12 +10,12 @@
     "google" : {
     	"clientID" : "221234006857-v9q7udkftic58sicm9a3ktldicdbh82p.apps.googleusercontent.com",
     	"clientSecret" : "_pysN9yPabCr2dXbwbAJnWIs",
-    	"callbackURL" : "https://sleepy-river-1523.herokuapp.com/auth/google/callback"
+    	"callbackURL" : "http://www.dailytimer.org/auth/google/callback"
     },
     "vk": {
-        "clientID" : "5003599",
-        "clientSecret" : "2OxsAYtv3lLUtGgSV2eQ",
-        "callbackURL" : "https://sleepy-river-1523.herokuapp.com/auth/vk/callback",
+        "clientID" : "5003664",
+        "clientSecret" : "dav96cLmECNWkg0VA6Bl",
+        "callbackURL" : "http://www.dailytimer.org/auth/vk/callback",
         "apiUrl":"https://api.vk.com/method/",
         "methods": {
             "users_get":"users.get?",
@@ -24,6 +24,6 @@
             "post_schedule":"execute.postSchedule?"
         }
     },
-    "apiUrl" : "https://sleepy-river-1523.herokuapp.com/api",
+    "apiUrl" : "http://www.dailytimer.org/api",
     "devApiUrl" : "http://localhost:3000/api"
 }
