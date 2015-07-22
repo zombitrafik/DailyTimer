@@ -13,8 +13,8 @@
     	"callbackURL" : "http://www.dailytimer.org/auth/google/callback"
     },
     "vk": {
-        "clientID" : "5003664",
-        "clientSecret" : "dav96cLmECNWkg0VA6Bl",
+        "clientID" : "5002560",
+        "clientSecret" : "DxgrLEDQGv94uODwpY9d",
         "callbackURL" : "http://www.dailytimer.org/auth/vk/callback",
         "apiUrl":"https://api.vk.com/method/",
         "methods": {
