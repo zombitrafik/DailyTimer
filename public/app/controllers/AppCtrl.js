@@ -308,12 +308,16 @@ var AppCtrl = angular.module('AppCtrl', [])
 	            				if(parseInt(el)<10) el = '0'+parseInt(el);
 	            			});
 						});
-	            		$('#colorpicker_bg'+$scope.item.tid).colorpicker().on('changeColor.colorpicker', function(event){
+	            		$('#colorpicker_bg'+$scope.item.tid).colorpicker({
+	            			format: 'rgba'
+	            		}).on('changeColor.colorpicker', function(event){
 							$scope.item.bgColor = $scope.item.rgbToStr(event.color.toRGB());
 							$('#colorpicker_bg'+$scope.item.tid).find('input').trigger('input');
 						});
 
-	            		$('#colorpicker_font'+$scope.item.tid).colorpicker().on('changeColor.colorpicker', function(event){
+	            		$('#colorpicker_font'+$scope.item.tid).colorpicker({
+	            			format: 'rgba'
+	            		}).on('changeColor.colorpicker', function(event){
 							$scope.item.fontColor = $scope.item.rgbToStr(event.color.toRGB());
 							$('#colorpicker_font'+$scope.item.tid).find('input').trigger('input');
 						});
